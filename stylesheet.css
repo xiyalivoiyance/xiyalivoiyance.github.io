@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body img {
+	width: 600px;
+	height: 451px;
+}
+h1 {
+	padding-top: 4px;
+}
+body div {
+	margin-top: -20px;
+}
