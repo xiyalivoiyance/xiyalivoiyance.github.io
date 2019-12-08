@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body{
+	margin: 0;
+}
+
 a:link {
 	color: #115FB1;
 	text-decoration: none;	
