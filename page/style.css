@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a:link {
+	color: #115FB1;
+	text-decoration: none;	
+}
+
+a:visited {
+	color: #115FB1;
+	text-decoration: none;	
+}
+
+h1 {
+
+	color: black;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-decoration: none;
+	font-size: 40px;
+}
+
+h2 {
+	position: absolute;
+	color: black;
+	font-family: Helvetica, Arial;
+	font-size: 40px;
+}
+
+h3{ 
+	position: absolute;
+	color: black;
+	font-family: Helvetica, Arial;
+	text-decoration: none;
+	font-size: 22px;
+}
+
+h4{
+	position: absolute;
+	color: black;
+	font-family: Helvetica, Arial;
+	text-decoration: none;
+	font-size: 13px;
+	max-width: 500px;
+}
+
+p{
+	position: absolute;
+	font-family: Helvetica, Arial;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 2;
+	max-width: 520px;
+	color: black;
+	
+}
+
+p1{
+	font-family: Helvetica, Arial;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 2;
+	color: black;
+}
+
+p2{
+	
+	font-family: Helvetica, Arial;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 2;
+	color: black;
+}
+
+article{
+	margin-top: 10%;
+	margin-left: 13%;
+	width: 76%;
+	font-family: Helvetica, Arial;
+	line-height: 2.6;
+}
+
+.Nav {
+	position: fixed;
+	left: 60px;
+	top: 91px;
+}
+.Nav1 {
+	position: fixed;
+	left: 60px;
+	top: 140px;
+}
+.Nav2 {
+	position: fixed;
+	left: 60px;
+	top: 160px;
+}
+.Nav3 {
+	position: fixed;
+	left: 60px;	
+	top: 180px;
+}
+
+.Cover{
+	margin-left: 0%;
+	margin-top: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+.Title{
+	position: absolute;
+	margin-left: 13%;
+	top: 67%;
+}
+
+.Subtitle{
+	position: absolute;
+	margin-left: 13%;
+	top: 80%;
+}
+
+.Date{
+	position: absolute;
+	margin-left: 13%;
+	top: 83%;
+}
+
+.PS{
+	max-width: 76%;
+	font-family: Helvetica, Arial;
+	font-weight: 600;
+	line-height: 2;
+	margin-top: 100%;
+	
+}
+
+#Caption{
+	margin-left:13%;
+}
+
+.MAGS-IF{
+	width: 74%;
+	height: auto;
+	margin-left: 13%;
+	margin-top: 15%;
+}
+
+
+
+.MAGS-dscp1 {
+	
+}
+
+.MAGS-BG{
+	background-color: #F0F7FC;
+	width: 1100px;
+	height: 700px;
+	margin-top: 20%;
+	margin-left: 13%;
+}
+
+.MAGS-Storyboard{
+	position: absolute;
+	width: 27%;
+	height: Auto;
+}
+
+#PD2 {
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 6%;
+}
+
+.MAGS-Render{
+	position: absolute;
+	width: 45%;
+	height: auto;
+}
+
+#R1 {
+	position: absolute;
+	margin-left: 39%;
+	margin-top: 13%;
+}
+
+.MAGS-Atb1{
+	margin-top: 29%;
+	margin-left: 6%;
+}
+
+.MAGS-dscp2{
+	position: absolute;
+	margin-top: 33%;
+	margin-left: 6%;
+	width: 27%;
+}
+
+
+#PD3 {
+	margin-left: 19%;
+	margin-top: 16%;
+}
+
+
+#ProductRender {
+	margin-left: 52%;
+	margin-top: 16%;
+	
+}
+
+
+.MAGS-Atb2{
+	margin-top: 23%;
+	margin-left: 6%;
+}
+
+.MAGS-dscp3{
+	position: absolute;
+	margin-top: 28%;
+	margin-left: 6%;
+	width: 27%;
+}
+
+.MAGS-Atb3{
+	margin-top: 32%;
+	margin-left: 6%;
+}
+
+.MAGS-dscp4{
+	position: absolute;
+	margin-top: 36%;
+	margin-left: 6%;
+	width: 27%;
+}
+
+#PD4 {
+	margin-top: 6%;
+	margin-left: 6%;
+}
+
+#UI {
+	margin-top: 7%;
+	margin-left: 40%;
+}
+

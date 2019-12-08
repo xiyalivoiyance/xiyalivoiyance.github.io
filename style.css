@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+
+
+a:link {
+	color: #115FB1;
+	text-decoration: none;	
+}
+
+a:visited {
+	color: #115FB1;
+	text-decoration: none;	
+}
+
+h1 {
+	color: #115FB1;
+	font-family: Helvetica, Arial;
+	text-decoration: none;
+	font-size: 60px;
+	max-width: 600px;
+}
+
+h2 {
+	color: #115FB1;
+	font-family: Helvetica, Arial;
+	font-size: 40px;
+}
+
+h3{
+	color: #115FB1;
+	font-family: Helvetica, Arial;
+	text-decoration: none;
+	font-size: 22px;
+}
+
+h4{
+	color: #115FB1;
+	font-family: Helvetica, Arial;
+	text-decoration: none;
+	font-size: 13px;
+	max-width: 500px;
+}
+
+p{
+	font-family: Helvetica, Arial;
+	font-size: 20px;
+	line-height: 1.8;
+	max-width: 520px;
+	color: #115FB1;
+	
+}
+
+.Cover{
+	width: 100%;
+	height: 100%;
+}
+
+.About{
+	font-family: "Lora Bold", Helvetica, Arial;
+	line-height: 2;
+	max-width: 800px;
+}
+
+
+.Nav {
+	position: fixed;
+	left: 60px;
+	top: 91px;
+}
+.Nav1 {
+	position: fixed;
+	left: 60px;
+	top: 140px;
+}
+.Nav2 {
+	position: fixed;
+	left: 60px;
+	top: 160px;
+}
+.Nav3 {
+	position: fixed;
+	left: 60px;	
+	top: 180px;
+}
+
+
+.D1 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 13%;
+	top: 40%;
+}
+
+/*
+@media (max-width: 1920px){
+}
+*/
+
+.D2 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 43%;
+}
+.D3 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 73%;
+}
+.D4 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 103%;
+}
+
+.D5 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 133%;
+}
+
+.D6 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 163%;
+}
+
+.D7 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 193%;
+}
+
+.D8 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 223%;
+}
+
+.D9 {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 40%;
+	left: 253%;
+}
+
+.D1Title {
+	position: absolute;
+	left: 13%;
+	top: 90%;
+	
+}
+.D2Title {
+	position: absolute;
+	left: 43%;
+	top: 90%;
+	
+}
+
+.D3Title {
+	position: absolute;
+	left: 73%;
+	top: 90%;
+}
+
+.D4Title {
+	position: absolute;
+	left: 103%;
+	top: 90%;
+}
+
+.D5Title {
+	position: absolute;
+	left: 133%;
+	top: 90%;
+}
+
+.D6Title {
+	position: absolute;
+	left: 163%;
+	top: 90%;
+}
+
+.D7Title {
+	position: absolute;
+	left: 193%;
+	top: 90%;
+}
+
+.D8Title {
+	position: absolute;
+	left: 223%;
+	top: 90%;
+}
+
+.D9Title {
+	position: absolute;
+	left: 253%;
+	top: 90%;
+}
+
+.footer{
+	background-color: white;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 95%;
+}
+
+#note{
+	position: fixed;
+	margin-left: 13%;
+	margin-top: 18%;
+}
+
+.Introduction{
+	position: absolute;
+	left: 15%;
+	top: 40%;
+}
+
+.FF{
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 40%;
+	left: 35%;
+	color: #308483;
+	
+}
+
+.MAGS{
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 135%;
+	left: 35%;
+	color: #A6A6A4;
+}
+
+.SIT{
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 230%;
+	left: 35%;
+	color: #827971;
+}
