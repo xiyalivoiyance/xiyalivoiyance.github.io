@@ -75,6 +75,17 @@ p2{
 	color: black;
 }
 
+p3{
+	position: relative;
+	font-family: Helvetica, Arial;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 2;
+	color: black;
+}
+
+
+
 article{
 	margin-top: 10%;
 	margin-left: 13%;
@@ -149,7 +160,18 @@ article{
 	margin-top: 15%;
 }
 
+.img{
+	width: 100%;
+	height:auto;
+}
 
+.footer{
+	background-color: white;
+	width: 10px;
+	height: 300px;
+	position: absolute;
+	top: 457%;
+}
 
 .MAGS-dscp1 {
 	
@@ -304,9 +326,68 @@ article{
 	width: 30%;
 }
 
+#CACR1{
+	margin-top: 20%;
+	margin-left: 13%;
+	width: 50%;
+	height: auto;
+}
+
+#CACR2{
+	margin-top: 20%;
+	margin-left: 13%;
+	width: 50%;
+	height: auto;
+}
+
 #closing{
 	margin-top:40%;
+	width: 100%;
+	height: auto;
 }
 
 
+#SESTi{
+	margin-left:13%;
+	top: 120%;
+}
 
+#SESp1{
+	margin-top:80%;
+	margin-left: 13%;
+}
+
+#SESp2{
+	margin-top:16%;
+	margin-left:13%;
+}
+
+#FR{
+	width: 40%;
+	height: auto;
+	margin-left: 13%;
+	margin-top:30%;
+	
+}
+
+#Hsk{
+	width: 50%;
+	height:auto;
+	margin-left: 50%;
+}
+
+#HTi{
+	margin-left:13%;
+	top: 160%;
+}
+
+#H{
+	width:50%;
+}
+
+.Hr{
+	position:absolute;
+	margin-left:-13%;
+	width:100%;
+	height:auto;
+}
