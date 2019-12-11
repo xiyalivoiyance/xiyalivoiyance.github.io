@@ -58,7 +58,7 @@ p{
 	
 }
 
-p1{
+p1{ 
 	font-family: Helvetica, Arial;
 	font-size: 16px;
 	font-weight: 700;
@@ -246,4 +246,67 @@ article{
 	margin-top: 7%;
 	margin-left: 40%;
 }
+
+
+#STti1{
+	margin-left: 13%;
+	margin-top: 45%;
+}
+
+#STdscp1{
+	
+	position: absolute;
+	margin-left: 13%;
+	margin-top: 50%;
+	width: 25%;
+	
+}
+
+#R1{
+	position: absolute;
+	width: 40%;
+	height: auto;
+	margin-left: 50%;
+	margin-top: 29%;
+}
+
+
+#STti2{
+	margin-left: 13%;
+	margin-top: 100%;
+}
+
+#STdscp2{
+	
+	position: absolute;
+	margin-left: 13%;
+	margin-top: 105%;
+	width: 25%;
+	
+}
+
+#R2{
+	position: absolute;
+	width: 40%;
+	height: auto;
+	margin-left: 50%;
+	margin-top: 89%;
+}
+
+#UJ{
+	margin-top:140%;
+}
+
+#STdscp3{
+	position: absolute;
+	margin-top: 190%;
+	left: 13%;
+	width: 30%;
+}
+
+#closing{
+	margin-top:40%;
+}
+
+
 
