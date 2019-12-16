@@ -156,7 +156,6 @@ article{
 	width: 74%;
 	margin-left: 13%;
 	margin-right: 13%;
-	margin-top: 10%;
 }
 
 .three{
@@ -166,7 +165,6 @@ article{
 	width: 74%;
 	margin-left: 13%;
 	margin-right: 13%;
-	margin-top: 10%;
 }
 
 
@@ -174,12 +172,11 @@ article{
 .four{
 	position: relative;
 	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-columns: repeat(4, 25%);
 	grid-gap: 5%;
 	width: 74%;
 	margin-left: 13%;
 	margin-right: 13%;
-	margin-top: 10%;
 }
 
 
@@ -191,7 +188,22 @@ article{
 	width: 74%;
 	margin-left: 13%;
 	margin-right: 13%;
-	margin-top: 10%;
+}
+
+.half{
+	display: grid;
+	grid-template-columns: 25% 25% 50%;
+	grid-gap: 5%;
+	margin-left: 13%;
+}
+
+.visuals{
+/*
+	display: flex;
+	align-items: center;
+*/
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 
@@ -446,7 +458,8 @@ article{
 }
 
 .FFBG{
-	margin-top: 10%;
+	
+	margin-top: 0%;
 	background-color:#369595;
 	width: 100%;
 	height: 850px;
