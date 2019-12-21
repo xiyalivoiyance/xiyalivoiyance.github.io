@@ -132,6 +132,8 @@ p{
 }
 
 
+
+
 .D1 {
 	width: 400px;
 	height: 400px;
@@ -308,7 +310,7 @@ p{
 .SIT{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 230%;
+	top: 233%;
 	left: 35%;
 	color: #827971;
 }
