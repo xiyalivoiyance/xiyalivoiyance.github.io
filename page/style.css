@@ -657,35 +657,34 @@ article{
 
 
 
+	/*Ideation, Prototype, tests*/
 
 
 
-/*
-.FFdesignDraft{
-	display: grid;
-	grid-template-rows: repeat(2, 80%);
-	grid-gap: 5%;
-}
-
-.FFdesignDraftSketchTest{
-	display: grid;
-	grid-template-columns: 40% 60%;
-	grid-gap: 5%;
-}
-
-.FFdesignDraftProcess{
+.select{
+			width: 100%;
+			height: auto;
+		}
 	
-	display: grid;
-	grid-template-columns: 60% 40%;
-	grid-gap: 5%;
-	
-}
+		.process{
+			
+			
+			display: grid;
+			grid-template-columns: repeat(5, 17%);
+			grid-template-rows: repeat(4, 24%);
+			column-gap: 5px;
+			grid-row-gap: 6px;
+			margin-top: 20%;
+			margin-left: 13%;
+			
+		}
+		
+		#maindisplay{
+			grid-column: 2 / span 4;
+			grid-row: span 4;
+		}
 
-.FFideation{
-	width:inherit;
-	height: 80%;
-}
-*/
+
 
 
 
