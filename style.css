@@ -210,61 +210,78 @@ p{
 	position: absolute;
 	top: 40%;
 	left: 253%;
+	
 }
 
 .D1Title {
 	position: absolute;
 	left: 13%;
 	top: 90%;
-	
+	width: 400px;
+	margin-top: 1%;
 }
 .D2Title {
 	position: absolute;
 	left: 43%;
 	top: 90%;
-	
+	width: 400px;
+	margin-top: 1%;
 }
 
 .D3Title {
 	position: absolute;
 	left: 73%;
 	top: 90%;
+	width: 400px;
+	margin-top: 1%;
 }
 
 .D4Title {
 	position: absolute;
 	left: 103%;
 	top: 90%;
+	width: 400px;
+	margin-top: 1%;
 }
 
 .D5Title {
 	position: absolute;
 	left: 133%;
 	top: 90%;
+	width: 400px;
+	margin-top: 1%;
 }
 
 .D6Title {
 	position: absolute;
 	left: 163%;
 	top: 90%;
+	width: 400px;
+	margin-top: 1%;
 }
 
 .D7Title {
 	position: absolute;
 	left: 193%;
 	top: 90%;
+	width: 400px;
+	margin-top: 1%;
 }
 
 .D8Title {
 	position: absolute;
 	left: 223%;
 	top: 90%;
+	width: 400px;
+	margin-top: 1%;
 }
 
 .D9Title {
 	position: absolute;
 	left: 253%;
 	top: 90%;
+	width: 400px;
+	margin-top: 1%;
 }
 
 .footer{

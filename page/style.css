@@ -42,6 +42,7 @@ h3{
 	font-family: Helvetica, Arial;
 	text-decoration: none;
 	font-size: 22px;
+	margin: 0px;
 }
 
 h4{
@@ -51,6 +52,7 @@ h4{
 	text-decoration: none;
 	font-size: 13px;
 	max-width: 500px;
+	margin: 0px;
 }
 
 h5{
@@ -250,6 +252,7 @@ section{
 .img{
 	width: 100%;
 	height:auto;
+	vertical-align: top;
 }
 
 .divider{
@@ -445,6 +448,7 @@ section{
 	margin-top:40%;
 	width: 100%;
 	height: auto;
+	vertical-align: top;
 }
 
 
