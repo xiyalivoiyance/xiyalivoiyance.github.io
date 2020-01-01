@@ -45,10 +45,20 @@ h3{
 }
 
 h4{
+	
 	color: black;
 	font-family: Helvetica, Arial;
 	text-decoration: none;
 	font-size: 13px;
+	max-width: 500px;
+}
+
+h5{
+	
+	color: black;
+	font-family: Helvetica, Arial;
+	text-decoration: none;
+	font-size: 19px;
 	max-width: 500px;
 }
 
@@ -156,6 +166,24 @@ article{
 	margin-top: 100%;
 	
 }
+
+
+
+
+
+section{
+	
+	width: 70%;
+	margin-left: 13%;
+	margin-top: 20%;
+	margin-bottom: 13%;
+	
+}
+
+
+
+
+
 
 .two{
 	display: grid;
