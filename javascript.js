@@ -17,9 +17,9 @@ let mobile = document.querySelector('.mobile');
 function checkScreenSize (){
 	
 	
-	let screenSize = window.innerWidth || document.body.clientWidth || document.documentElement.clientWidth;
+	let screenSize = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth ;
 
-	if( screenSize < 600 ){
+	if( screenSize < 1000 ){
 		
 	
 		
