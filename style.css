@@ -435,9 +435,30 @@ h5{
 p1{
 	font-family: Helvetica, Arial;
 	font-size: 43px;
-	line-height: 53px;
+	line-height: 60px;
+	
+}
+
+.mbText{
+	position: static;
 	margin-left: 12%;
 	margin-right: 12%;
+	max-width: 76%;
+}
+
+.mbTitle{
+	position: static;
+	font-family: "Ibarra Real Nova Bold", "Libre Baskerville Bold", Ovo, "serif";
+	margin-left: 12%;
+	margin-right: 12%;
+	max-width: 76%;
+}
+
+.mbSubTitle{
+	position: static;
+	margin-left: 12%;
+	margin-right: 12%;
+	max-width: 76%;
 }
 
 .mbNav{
@@ -484,6 +505,14 @@ p1{
 	margin-top: 60%;
 }
 
+
+
+
+
+/*Main*/
+
+
+
 .mbCover{
 	width: 76%;
 	height: auto;
@@ -499,7 +528,7 @@ p1{
 	
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 32%;
+	top: 33%;
 	margin-left: 35%;
 	color: #308483;
 	
@@ -509,7 +538,7 @@ p1{
 #mbMAGS{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 58%;
+	top: 57.5%;
 	margin-left: 35%;
 	width: 33%;
 	color: #367DC2;
@@ -519,13 +548,32 @@ p1{
 #mbSIT{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 82.3%;
+	top: 81%;
 	margin-left: 35%;
 	color: #827971;
 }
 
 
+/*About*/
 
+
+#mbAboutResearch{
+	margin-top: 20%;
+	color: #115FB1;
+}
+
+
+#mbAboutDesign{
+	
+	margin-top: 20%;
+	margin-bottom: 30%;
+	color: #115FB1;
+	
+}
+
+#mbAboutIntro{
+	color: #115FB1;
+}
 
 
 
