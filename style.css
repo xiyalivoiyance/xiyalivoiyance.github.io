@@ -536,7 +536,7 @@ p1{
 	
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 20%;
+	top: 28%;
 	margin-left: 17%;
 	color: #308483;
 	
@@ -546,7 +546,7 @@ p1{
 #mbMAGS{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 45%;
+	top: 50%;
 	margin-left: 17%;
 	width: 25%;
 	color: #367DC2;
@@ -556,7 +556,7 @@ p1{
 #mbSIT{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 70%;
+	top: 75%;
 	margin-left: 17%;
 	color: #827971;
 }
