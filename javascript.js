@@ -40,4 +40,35 @@ mobile.style.visibility = 'hidden';
 
 checkScreenSize();
 	
+
+
+
+
+let navigation = document.querySelector('#mbNavigation');
+
+
+document.onscroll = function() {
+	
+	var pos = document.documentElement.scrollTop;
+		
+		if( pos > 100){
+			
+			
+			navigation.style.visibility = "hidden";
+			
+		} else {
+			
+			navigation.style.visibility = "visible";
+
+		}
+	
+}
+
+
+
+
+
+
+
+
 	
