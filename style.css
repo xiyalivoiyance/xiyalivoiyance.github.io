@@ -438,7 +438,7 @@ p1{
 .mbNav{
 	
 	position: fixed;
-	font-size: 43px;
+	font-size: 80px;
 	left: 12%;
 	top: 5%;
 	
@@ -449,21 +449,21 @@ p1{
 .mbNav1{
 	
 	position: fixed;
-	font-size:  33px;
+	font-size:  50px;
 	left: 12%;
 	top: 17%;
 }
 .mbNav2{
 	
 	position: fixed;
-	font-size: 33px;
+	font-size: 50px;
 	left: 12%;
 	top: 24%;
 }
 .mbNav3{
 	
 	position: fixed;
-	font-size: 33px;
+	font-size: 50px;
 	left: 12%;	
 	top: 31%;
 }

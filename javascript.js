@@ -51,7 +51,7 @@ document.onscroll = function() {
 	
 	var pos = document.documentElement.scrollTop;
 		
-		if( pos > 100){
+		if( pos > 10){
 			
 			
 			navigation.style.visibility = "hidden";
