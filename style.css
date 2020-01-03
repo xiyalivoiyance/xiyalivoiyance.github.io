@@ -429,7 +429,6 @@ p{
 h5{
 	font-family: Helvetica, Arial;
 	position:absolute;
-	font-size: 25px;
 }
 
 p1{
@@ -439,9 +438,9 @@ p1{
 .mbNav{
 	
 	position: fixed;
-	font-size: 28px;
+	font-size: 40px;
 	left: 12%;
-	top: 3%;
+	top: 5%;
 	
 	
 }
@@ -450,23 +449,23 @@ p1{
 .mbNav1{
 	
 	position: fixed;
-	font-size: 15px;
+	font-size:  33px;
 	left: 12%;
-	top: 14%;
+	top: 17%;
 }
 .mbNav2{
 	
 	position: fixed;
-	font-size: 15px;
+	font-size: 33px;
 	left: 12%;
-	top: 18%;
+	top: 20%;
 }
 .mbNav3{
 	
 	position: fixed;
-	font-size: 15px;
+	font-size: 33px;
 	left: 12%;	
-	top: 22%;
+	top: 23%;
 }
 
 
@@ -576,9 +575,6 @@ p1{
 	
 	
 	#mbFF{
-	
-	position: absolute;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	top: 0%;
 	margin-left: 0%;
 	color: #308483;
@@ -587,8 +583,7 @@ p1{
 
 
 #mbMAGS{
-	position: absolute;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	
 	top: 0%;
 	margin-left: 0%;
 	width: 27%;
@@ -597,8 +592,6 @@ p1{
 
 
 #mbSIT{
-	position: absolute;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	top: 0%;
 	margin-left: 0%;
 	color: #827971;
