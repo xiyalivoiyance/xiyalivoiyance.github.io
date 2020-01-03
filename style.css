@@ -528,8 +528,8 @@ p1{
 	
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 33%;
-	margin-left: 35%;
+	top: 20%;
+	margin-left: 17%;
 	color: #308483;
 	
 }
@@ -538,9 +538,9 @@ p1{
 #mbMAGS{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 57.5%;
-	margin-left: 35%;
-	width: 33%;
+	top: 45%;
+	margin-left: 17%;
+	width: 25%;
 	color: #367DC2;
 }
 
@@ -548,8 +548,8 @@ p1{
 #mbSIT{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	top: 81%;
-	margin-left: 35%;
+	top: 70%;
+	margin-left: 17%;
 	color: #827971;
 }
 
