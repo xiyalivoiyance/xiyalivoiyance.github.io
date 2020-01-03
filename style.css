@@ -429,13 +429,14 @@ p{
 h5{
 	font-family: Helvetica, Arial;
 	position:absolute;
-	font-size: 50px;
+	font-size: 55px;
 }
 
 p1{
 	font-family: Helvetica, Arial;
-	font-size: 43px;
-	line-height: 60px;
+	font-weight: 500;
+	font-size: 46px;
+	line-height: 70px;
 	
 }
 
@@ -455,6 +456,13 @@ p1{
 }
 
 .mbSubTitle{
+	position: static;
+	margin-left: 12%;
+	margin-right: 12%;
+	max-width: 76%;
+}
+
+.mbDescrip{
 	position: static;
 	margin-left: 12%;
 	margin-right: 12%;
