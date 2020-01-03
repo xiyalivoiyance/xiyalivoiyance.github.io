@@ -429,11 +429,15 @@ p{
 h5{
 	font-family: Helvetica, Arial;
 	position:absolute;
-	font-size: 40px;
+	font-size: 50px;
 }
 
 p1{
 	font-family: Helvetica, Arial;
+	font-size: 43px;
+	line-height: 53px;
+	margin-left: 12%;
+	margin-right: 12%;
 }
 
 .mbNav{

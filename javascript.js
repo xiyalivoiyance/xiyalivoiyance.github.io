@@ -10,6 +10,7 @@
 let mobile = document.querySelector('.mobile');
 
 
+	var mode = '';
 
 
 //check the screen size. The pc version will use the complex version and the mobile screen will use the simple version.
@@ -27,11 +28,16 @@ function checkScreenSize (){
 		pc.style.visibility = 'hidden';
 		mobile.style.visibility = 'visible';
 		
+		mode = 'mobile';
+		
 		
 	} else {
 		
 pc.style.visibility = 'visible';
 mobile.style.visibility = 'hidden';   
+		
+		mode = 'pc';
+		
 	}
 	
 	
@@ -56,7 +62,7 @@ document.onscroll = function() {
 			
 			navigation.style.visibility = "hidden";
 			
-		} else {
+		} else if( pos < 10 && (mode == 'mobile')) {
 			
 			navigation.style.visibility = "visible";
 
