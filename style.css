@@ -429,6 +429,7 @@ p{
 h5{
 	font-family: Helvetica, Arial;
 	position:absolute;
+	font-size: 40px;
 }
 
 p1{
@@ -440,7 +441,7 @@ p1{
 	position: fixed;
 	font-size: 80px;
 	left: 12%;
-	top: 5%;
+	top: 3%;
 	
 	
 }
@@ -451,21 +452,21 @@ p1{
 	position: fixed;
 	font-size:  50px;
 	left: 12%;
-	top: 17%;
+	top: 15%;
 }
 .mbNav2{
 	
 	position: fixed;
 	font-size: 50px;
 	left: 12%;
-	top: 24%;
+	top: 19%;
 }
 .mbNav3{
 	
 	position: fixed;
 	font-size: 50px;
 	left: 12%;	
-	top: 31%;
+	top: 23%;
 }
 
 
@@ -476,7 +477,7 @@ p1{
 
 
 #mbHighlights{
-	margin-top: 50%;
+	margin-top: 60%;
 }
 
 .mbCover{
@@ -495,7 +496,7 @@ p1{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	top: 32%;
-	margin-left: 37%;
+	margin-left: 35%;
 	color: #308483;
 	
 }
@@ -506,7 +507,7 @@ p1{
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	top: 57%;
 	margin-left: 38%;
-	width: 27%;
+	width: 33%;
 	color: #367DC2;
 }
 
@@ -515,7 +516,7 @@ p1{
 	position: absolute;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	top: 82.3%;
-	margin-left: 40%;
+	margin-left: 35%;
 	color: #827971;
 }
 
