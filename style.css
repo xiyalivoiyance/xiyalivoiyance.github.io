@@ -337,7 +337,6 @@ p{
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	top: 40%;
 	margin-left: 35%;
-
 	color: #308483;
 	
 }
@@ -347,7 +346,7 @@ p{
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	top: 135%;
 	margin-left: 35%;
-	color: #A6A6A4;
+	color: #367DC2;
 }
 
 .SIT{
@@ -430,7 +429,7 @@ p{
 h5{
 	font-family: Helvetica, Arial;
 	position:absolute;
-	
+	font-size: 25px;
 }
 
 p1{
@@ -440,23 +439,34 @@ p1{
 .mbNav{
 	
 	position: fixed;
-
+	font-size: 28px;
+	left: 12%;
+	top: 3%;
+	
+	
 }
 
 
 .mbNav1{
 	
 	position: fixed;
-	
+	font-size: 15px;
+	left: 12%;
+	top: 14%;
 }
 .mbNav2{
 	
 	position: fixed;
+	font-size: 15px;
+	left: 12%;
+	top: 18%;
 }
 .mbNav3{
 	
 	position: fixed;
-	
+	font-size: 15px;
+	left: 12%;	
+	top: 22%;
 }
 
 
@@ -465,12 +475,107 @@ p1{
 	visibility: hidden;
 }
 
+
+#mbHighlights{
+	margin-top: 50%;
+}
+
+.mbCover{
+	width: 76%;
+	height: auto;
+	vertical-align: top;
+	margin-left: 12%;
+	margin-right: 12%;
+	margin-top: 8%;
+	margin-bottom: 10%;
+}
+
+
+#mbFF{
+	
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 32%;
+	margin-left: 37%;
+	color: #308483;
+	
+}
+
+
+#mbMAGS{
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 57%;
+	margin-left: 38%;
+	width: 27%;
+	color: #367DC2;
+}
+
+
+#mbSIT{
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 82.3%;
+	margin-left: 40%;
+	color: #827971;
+}
+
+
+
+
+
+
+
+@media (min-width: 1000px){
+	
+	
+	.mbNav{
+	
+	position: fixed;
+	font-size: 28px;
+	left: 12%;
+	top: 90px;
+	
+	
+}
+
+
+.mbNav1{
+	
+	position: fixed;
+	font-size: 15px;
+	left: 12%;
+	top: 170px;
+}
+.mbNav2{
+	
+	position: fixed;
+	font-size: 15px;
+	left: 12%;
+	top: 195px;
+}
+.mbNav3{
+	
+	position: fixed;
+	font-size: 15px;
+	left: 12%;	
+	top: 220px;
+}
+
+
+
+
 .mbCover{
 	width: 100%;
 	height: auto;
 	vertical-align: top;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 0%;
 }
-
+	
+	
+}
 
 
 
