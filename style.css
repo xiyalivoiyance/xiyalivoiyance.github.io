@@ -566,12 +566,42 @@ p1{
 
 
 .mbCover{
-	width: 100%;
+	width: 0%;
 	height: auto;
 	vertical-align: top;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-top: 0%;
+}
+	
+	
+	#mbFF{
+	
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 0%;
+	margin-left: 0%;
+	color: #308483;
+	
+}
+
+
+#mbMAGS{
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 0%;
+	margin-left: 0%;
+	width: 27%;
+	color: #367DC2;
+}
+
+
+#mbSIT{
+	position: absolute;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	top: 0%;
+	margin-left: 0%;
+	color: #827971;
 }
 	
 	
