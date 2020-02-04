@@ -238,7 +238,7 @@ section{
 }
 
 
-#Caption{
+.Caption{
 	margin-left:13%;
 }
 
@@ -307,7 +307,7 @@ section{
 	height: auto;
 }
 
-#R1 {
+#MAGS-R1 {
 	position: absolute;
 	margin-left: 39%;
 	margin-top: 13%;
@@ -334,7 +334,7 @@ section{
 
 #ProductRender {
 	margin-left: 52%;
-	margin-top: 16%;
+	margin-top: 30%;
 	
 }
 
@@ -362,6 +362,31 @@ section{
 	margin-left: 6%;
 	width: 27%;
 }
+
+
+
+.uj{
+	height: 100%;
+}
+
+
+.imgContainer{
+	width: 74%;
+	height: 150%;
+	margin-left: 13%;
+	margin-top: 15%;
+	overflow-x: scroll;
+}
+
+
+
+
+
+
+
+
+
+
 
 #PD4 {
 	margin-top: 6%;
