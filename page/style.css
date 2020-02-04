@@ -366,17 +366,19 @@ section{
 
 
 .uj{
-	height: 100%;
+	height: 650px;
+	width: auto;
 }
 
 
 .imgContainer{
 	width: 74%;
-	height: 150%;
+	height: 680px;
 	margin-left: 13%;
 	margin-top: 15%;
 	overflow-x: scroll;
 }
+
 
 
 
