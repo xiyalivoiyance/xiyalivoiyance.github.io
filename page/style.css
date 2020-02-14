@@ -729,7 +729,7 @@ section{
 			
 			
 			display: grid;
-			grid-template-columns: repeat(5, 17%);
+			grid-template-columns: repeat(5, 20.7%);
 			grid-template-rows: repeat(4, 24%);
 			column-gap: 5px;
 			grid-row-gap: 6px;
