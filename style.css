@@ -77,7 +77,9 @@ p{
 
 
 .Cover{
-	width: 100%;
+	margin-top: 10%;
+	width: 75%;
+	margin-left: 15%;
 	height: auto;
 	vertical-align: top;
 	
@@ -333,10 +335,10 @@ p{
 }
 
 .FF{
-	position: absolute;
+/*	position: absolute;*/
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	top: 40%;
-	margin-left: 35%;
+	margin-left: 15%;
 	color: #308483;
 	
 }
