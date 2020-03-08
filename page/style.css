@@ -930,7 +930,7 @@ section{
 
 #bambieUI{
 	
-	margin-top: 60%;
+	margin-top: 0%;
 	margin-left: 30%;
 	
 }
@@ -938,9 +938,15 @@ section{
 #bambieUI img{
 	width: 300px;
 	height: auto;
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-bottom: 10%;
 	margin-left: 3%;
 }
 
+#bambiegif{
+	margin-left: 40%;
+	width: 25%;
+	margin-bottom: 0%;
+	
+}
 
