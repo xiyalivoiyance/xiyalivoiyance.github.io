@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 body {
 	margin: 0;
 	margin-top: 0;
@@ -82,7 +84,30 @@ p{
 	margin-left: 15%;
 	height: auto;
 	vertical-align: top;
-	
+}
+
+#project1{
+	margin-top: 91px;
+	width: 80%;
+	margin-left: 20%;
+	height: auto;
+	vertical-align: top;
+}
+
+#project2{
+	margin-top: 10%;
+	width: 80%;
+	margin-left: 0%;
+	height: auto;
+	vertical-align: top;
+}
+
+#project3{
+	margin-top: 10%;
+	width: 80%;
+	margin-left: 20%;
+	height: auto;
+	vertical-align: top;
 }
 
 .two{

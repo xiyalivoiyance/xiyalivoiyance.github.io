@@ -928,8 +928,19 @@ section{
 
 
 
+#bambieUI{
+	
+	margin-top: 60%;
+	margin-left: 30%;
+	
+}
 
-
-
+#bambieUI img{
+	width: 300px;
+	height: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-left: 3%;
+}
 
 
