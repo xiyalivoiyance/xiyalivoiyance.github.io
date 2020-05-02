@@ -250,6 +250,10 @@ section{
 	text-decoration: underline;
 }
 
+.descript{
+	margin-left:13%;
+}
+
 .ifg{
 	width: 74%;
 	height: auto;
