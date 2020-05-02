@@ -242,6 +242,14 @@ section{
 	margin-left:13%;
 }
 
+.finalconcept{
+	margin-left:13%;
+	margin-top: 20%;
+	margin-bottom: 0%;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
 .ifg{
 	width: 74%;
 	height: auto;
@@ -403,14 +411,14 @@ section{
 
 #STti1{
 	margin-left: 13%;
-	margin-top: 45%;
+	margin-top: 21%;
 }
 
 #STdscp1{
 	
 	position: absolute;
 	margin-left: 13%;
-	margin-top: 50%;
+	margin-top: 26%;
 	width: 25%;
 	
 }
@@ -420,20 +428,20 @@ section{
 	width: 40%;
 	height: auto;
 	margin-left: 50%;
-	margin-top: 29%;
+	margin-top: 5%;
 }
 
 
 #STti2{
 	margin-left: 13%;
-	margin-top: 100%;
+	margin-top: 66%;
 }
 
 #STdscp2{
 	
 	position: absolute;
 	margin-left: 13%;
-	margin-top: 105%;
+	margin-top: 71%;
 	width: 25%;
 	
 }
@@ -443,16 +451,16 @@ section{
 	width: 40%;
 	height: auto;
 	margin-left: 50%;
-	margin-top: 89%;
+	margin-top: 55%;
 }
 
 #UJ{
-	margin-top:140%;
+	margin-top:110%;
 }
 
 #STdscp3{
 	position: absolute;
-	margin-top: 190%;
+	margin-top: 160%;
 	left: 13%;
 	width: 30%;
 }
