@@ -1,114 +1,193 @@
+<!DOCTYPE html>
 
-
-<!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>XIYA LI PORTFOLIO</title>
-	<title>Xiya Li</title>
-	<meta name="author" content="Xiya Li">
 
-<meta name="Description" content="Xiya Li's portfolio website">
-</head>
+    <style>
 
-	<link href="style.css" rel="stylesheet">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+    /* .background{
+        width:110%;
+        height:110%;
+       margin-left: -10px;
+       margin-top: -10px;
+      
+    } */
+
+    body {
+  background-image: url('../website/img/bg.png');
+  background-repeat: no-repeat;
+  background-size: 120% auto;
+  background-position: center;
+  overflow: hidden;
+}
+
+    #cam{
+  width: 100vw;    
+  height: auto;      
+  display: block; 
+  position: absolute;
+}
+
+#button{
+       margin-top: 700px;
+       margin-left: 635px;
+       position:absolute;
+    }
+
+    #iris{
+       margin-top: 700px;
+       margin-left: 680px;
+       position:absolute;
+       transition: transform 0.3s ease;
+       width: 100px;
+    }
+
+    #p1{
+        width: 400px;
+       /* margin-top: 200px;
+       margin-left: 900px; */
+    }
+
+    #p2{
+        width: 400px;
+       margin-top: 50px;
+    }
+
+    #p3{
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    .scroll {
+  overflow: auto;
+  margin-top: 100px;
+  margin-left: 900px;
+  position: absolute;
+  width: 400px;
+  height: 680px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none; 
+}
+
+
+    </style>
+    
 <body>
-	
-	
+    <!-- <img src="../website/img/bg.png"  id="background"> -->
+    <img src="../website/img/cam.png"  id="cam">
+    <a href="about.html"> <img src="../website/img/button.png"  id="button"> </a>
+    <a href="about.html"> <img src="../website/img/iris.png"  id="iris"> </a>
 
-	
-	
-	<div class="mobile">
-	
-	
-	<div id="mbNavigation">
-	  <h5 class="mbNav"><a href="index.html">XIYA LI</a></h5>
-	  <h5 class="mbNav1"><a href="UIUX.html">UI / UX</a></h5>
-	  <h5 class="mbNav2"><a href="ProductDesign.html">Product</a></h5>
-	  <h5 class="mbNav3"><a href="About.html">About</a></h5>
-	</div>
-		
-	
-	<div id="mbHighlights">	
-		
-<!--
-	<h5 id="mbFF">Fresh Filter</h5>
-	<h5 id="mbMAGS">Museum Audio Guide System</h5>
-	<h5 id="mbSIT">Sustainable <br> IH Toaster</h5>
--->
-		
-	<a href="page/skincarefinder.html"><img src="assets/image/Main/Skincare finder.png" alt="" width="1920" height="1080" class="mbCover"></a> 
-		
-	<a href="page/FreshFilter.html"><img src="assets/image/Main/Fresh Filter.png" alt="" width="1920" height="1080" class="mbCover"></a> 
-		
-	<a href="page/MuseumAudioGuideSystem.html"><img src="assets/image/Main/Museum Audio Guide System.png" alt="" width="1917" height="1078" class="mbCover"></a>
-		
-	<a href="page/SustainableToaster.html"><img src="assets/image/Main/Sustainable IH Toaster.png" alt="" width="1953" height="1112" class="mbCover"></a>
-		
-	</div>
-	
-	</div>
-	
-	
-	
-	
-	<div class="PC">
-	
-	<div>
-	  <h3><a href="index.html" class="Nav">XIYA LI</a></h3>
-	  <h4><a href="UIUX.html" class="Nav1">UI / UX</a></h4>
-	  <h4><a href="ProductDesign.html" class="Nav2">Product</a></h4>
-	  <h4><a href="About.html" class="Nav3">About</a></h4>
-	</div>
+    <div class="scroll">
+        <a href="../website/project/touch_up.html"><img src="../website/img/00.png"  id="p1" class="hover"></a>
+        <a href="../website/project/flvw.html"><img src="../website/img/10.png"  id="p2" class="hover"></a>
+        <a href="../website/project/autoport.html"><img src="../website/img/20.png"  id="p3" class="hover"></a>
+    </div>
+   
+
+<script>
+
+    var x = 0;
+    var y = 0;
+    // var bgX = document.getElementById('background').style.marginLeft;
+    // var bgY = document.getElementById('background').style.marginTop;
+    var bgX = 0;
+    var bgY = 0;
+    var button = document.getElementById('button');
+
+    var iris = document.getElementById('iris');
+    var rotateIris = 0;
+    var deg = 0;
+
+    document.body.style.backgroundPosition = `${0}% ${10}%`;
+    // console.log(document.body.style.backgroundPosition);
+
+    function moveBG(event) {
+
+  x = event.clientX / window.innerWidth;
+  y = event.clientY / window.innerHeight;
+
+//   console.log("x: " + x + "y: " + y);
+
+  if(!((x >= .6) && (x <= .9))){
 
 
-<div class="highlights">
-		
-		<a href="page/skincarefinder.html"><img src="assets/image/Main/Skincare finder@2x.png" alt="" width="1920" height="1080" id="project4"></a> 
-	
-		</div>
-		
-	<div class="highlights">
-		
-		<a href="page/FreshFilter.html"><img src="assets/image/Main/Fresh Filter.png" alt="" width="1920" height="1080" id="project1"></a> 
-		
-<!--	<h3 class="FF">Fresh Filter</h1>-->
-		
-		</div>
-		
-		
-		
-	<div class="highlights">
-		
-		<a href="page/MuseumAudioGuideSystem.html"><img src="assets/image/Main/Museum Audio Guide System@2x.png" alt="" width="1917" height="1078" id="project2"></a>
-<!--	<h1 class="MAGS">Museum Audio Guide System</h1>	-->
-		
-		</div>
-		
-	
-		
-	<div class="highlights">
-		
-		<a href="page/SustainableToaster.html"><img src="assets/image/Main/Sustainable IH Toaster.png" alt="" width="1953" height="1112" id="project3"></a>
-<!--	<h1 class="SIT">Sustainable <br> IH Toaster</h1>-->
-		
-		</div>
-		
-		
+  bgX = x*20;
+  bgY = y*10+10;
+   
+    // console.log("bgX: " + bgX + "bgY: " + bgY);
+  document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
+   
 
-	</div>
-	
-	
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	
-	
+  }
+
+
+
+}
+
+document.addEventListener("mousemove", moveBG);
+
+const imgs = document.querySelectorAll('.hover');
+
+function hoverImage(){
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].addEventListener('mouseenter', () => {
+            imgs[i].src = '../website/img/' + i + '1.png';
+  });
+
+  imgs[i].addEventListener('mouseleave', () => {
+            imgs[i].src = '../website/img/' + i + '0.png';
+  });
+
+}
+}
+
+
+hoverImage();
+
+
+button.addEventListener('mouseenter', () => {
+    rotateIris = 1;
+    rotate();
+  });
+  
+button.addEventListener('mouseleave', () => {
+    rotateIris = 0;
+  });
+
+iris.addEventListener('mouseenter', () => {
+    rotateIris = 1;
+    rotate();
+  });
+  
+  iris.addEventListener('mouseleave', () => {
+    rotateIris = 0;
+  });
+
+  function rotate(){
+    if(rotateIris == 1){
+        iris.style.transform = 'rotate(' + deg + 'deg)';
+        deg += 3;
+        console.log(deg);
+        requestAnimationFrame(rotate);
+    }
+  }
+  
+
+
+</script>
 </body>
-	
-	<script src="javascript.js"></script>
-	
-</html>
+</html> 
+
+

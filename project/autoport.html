@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+    <style>
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+   #ring{
+       margin-top: 20px;
+       margin-left: 20px;
+       width: 80px;
+       position:fixed;
+    }
+
+    #content{
+      top: 0;
+  left: 0;
+  width: 100%;  
+   position:absolute;
+    }
+
+
+    </style>
+    
+<body>
+  
+<img src="../project/img/autoport.jpg"  id="content">
+  <a href="../index.html"> <img src="../img/cone&rod.png"  id="ring"> </a>
+
+<script>
+var ring = document.getElementById('ring');
+    var rotateRing = 0;
+    var deg = 0;
+
+
+ring.addEventListener('mouseenter', () => {
+    rotateRing = 1;
+    rotate();
+  });
+  
+ ring.addEventListener('mouseleave', () => {
+    rotateRing = 0;
+  });
+
+  function rotate(){
+    if(rotateRing == 1){
+        ring.style.transform = 'rotate(' + deg + 'deg)';
+        deg += 3;
+        console.log(deg);
+        requestAnimationFrame(rotate);
+    }
+  }
+
+
+    var pagePos = 0;
+  window.addEventListener('scroll', () => {
+    pagePos = window.scrollY
+    if(pagePos >= 1000){
+      ring.style.visibility = 'hidden';
+    } else{
+      ring.style.visibility = 'visible';
+    }
+});
+
+
+ 
+</script>
+</body>
+</html> 
+
+

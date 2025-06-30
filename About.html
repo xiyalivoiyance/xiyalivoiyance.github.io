@@ -1,148 +1,265 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
-<head>
-<meta charset="UTF-8">
-<title>XIYA LI PORTFOLIO</title>
-	<link href="style.css" rel="stylesheet">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 
+
+    <style>
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#gradient{
+ background: linear-gradient(45deg, rgba(247,203,214,0.8), rgba(247,203,214,0.0)70%), 
+linear-gradient(90deg, rgba(219,225,251,0.8), rgba(219,225,251,0.0)70%), 
+linear-gradient(135deg, rgba(204,246,250,0.8), rgba(204,246,250,0.0)70%), 
+linear-gradient(180deg, rgba(243,208,250,0.8), rgba(243,208,250,0.0)70%), 
+linear-gradient(225deg, rgba(186,248,203,0.8), rgba(186,248,203,0.0)70%),  
+linear-gradient(270deg, rgba(205,246,170,0.8), rgba(205,246,170,0.0)70%), 
+linear-gradient(315deg, rgba(244,206,147,0.8), rgba(244,206,147,0.0)70%);
+
+
+top: 0;
+  left: 0;
+  width: 100vw;        
+  height: 100vh; 
+  position: absolute;
+ border: none; 
+ position:absolute;
+}
+
+#button2{
+       margin-top: 700px;
+       margin-left: 635px;
+    }
+
+    #ring{
+       margin-top: 705px;
+       margin-left: 685px;
+       width: 100px;
+    }
+
+    img{
+        position: absolute;
+    }
+
+    a {
+  /* text-decoration: none;  */
+  color: inherit;         
+}
+
+    #name{
+      font: medium "Jost";
+      color: white;
+      font-size: 18px;
+      letter-spacing: 7px;
+    }
+
+ #info{
+      font: medium "Jost";
+      color: white;
+      margin-left: 125px;
+      margin-top: 450px;
+      position:absolute;
+      text-align: center;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    #description{
+      font: medium "Jost";
+      color: white;
+      width: 460px;
+      height:50px;
+      margin-left: 900px;
+      margin-top: 480px;
+      position:absolute;
+      font-size: 15px;
+      line-height: 1.5;
+
+    }
+
+    #scrollBox{
+      width: 550px;
+      height:250px;
+      margin-left: 850px;
+      margin-top: 380px;
+      position:absolute;
+    }
+
+  #headshot {
+            margin-top: 265px;
+            margin-left: 368px;
+            border-radius: 300px;
+             width: 450px;
+            height: 450px;
+            object-fit: cover;          /* fills the box and crops excess */
+            object-position: center;
+            
+        }
+
+    #gauge {
+      position:absolute;
+    }
+
+    </style>
+    
 <body>
-	
-<!--Mobile version-->
-	
-	<div class="mobile">
-	
-	<div id="mbNavigation">
-	  <h5 class="mbNav"><a href="index.html">XIYA LI</a></h5>
-	  <h5 class="mbNav1"><a href="UIUX.html">UI / UX</a></h5>
-	  <h5 class="mbNav2"><a href="ProductDesign.html">Product</a></h5>
-	  <h5 class="mbNav3"><a href="About.html">About</a></h5>
-	</div>
-	
-	
-	<div id="mbHighlights">
-		
-		
-		<article class="mbText" id="mbAboutIntro" alt="Introduction">
-		
-			<p1>
-				Hi! I am a senior in the industrial design program at the University of Illinois, Urbana Champaign. My working experience encompasses product design, user interface, and user experience design.
-				<br><br>
-				<a href="Resume 2019.pdf" download="Resume 2019.pdf"><u>Resume (PDF, 53 KB)</u></a><br>
-				<a href="mailto:xiyali2@illinois.edu">Email:  xiyali2@illinois.edu</a>
 
-			</p1>
-		
-		</article>
-		
-		<section id="mbAboutResearch" alt="Research">
-			
-		
-				<h5 class="mbTitle">Research</h5>
-		
-			
-			
-			<article class="mbText">
-				<p1>
-				My research studies user behaviors in both physical and digital experience in design, creating products that communicate their ideas effectively. Instead of passively applying all of the user needs in design, I select them discernibly and point out the best options for the users. The main focus of my research is to bring changes in quality, rather than mere quantity or novelty. I am interested in sustainable products and services that leave positive impacts on people’s lives and their living environment. With more and more companies invest in research in sustainability, turning perspectives in traditional product designs and services can be challenging but still deliverable under careful consideration and validation.
-				</p1>
-			
-			
-			</article>
-		
-		
-		</section>
-		
-		<section id="mbAboutDesign" alt="Design">
-		
-				<h5 class="mbTitle">Design</h5>
-		
-			
-			
-			<article class="mbText">
-				
-				<p1>
-				The understanding of the working mechanism in both physical structures in products and coding language in UI/UX projects helps me to deliver a robust and feasible design that creates differentiable products and services and adds value to the current market. I have accumulated skills in both research and ideation that allows me to be good at working around with constraints, define design goals within reach, and create the designs that align with the goal.
-				</p1>
-			
-			</article>
-		
-		</section>
-		
-		
-		</div>
-		
-		
+
+
+<div id="gradient"></div>
+  <img src="../website/img/gauge.png" id="gauge">
+<img src="../website/img/XIYAS.gif" width="500px" id="headshot">
+    <a href="index.html"> <img src="../website/img/button2.png"  id="button2"> </a>
+    <a href="index.html"> <img src="../website/img/cone&rod.png"  id="ring"> </a>
+
+    
+
+    
+
+    <h3 id="info"><span id="name">XIYA LI</span> <br> <br> 
+      <a href="../website/cv.pdf">CV</a> <br> 
+      <a href="../website/2020/index.html">2016 - 2020</a> <br> 
+      <a href="mailto:xiyalixiya@outlook.com">xiyalixiya@outlook.com</a> 
+      <br> @xiyatimetravelling 
+    </h3>
+    
+   
+
+    <marquee direction="up" scrolldelay="200" id="description">
+Hi! I am an industrial designer. <br>
+My design focuses on ergonomics and positive emotion by appropriate forms and colours. I am passionate about different approaches to sustainability in design, such as modularity, repairability, and performance structures. <br> <br>   
+Industrial design(BFA) University of Illinois at Urbana-Champaign  <br>   <br>   
+Design products(MA) Royal College of Art 
+    </marquee>
+
+     <div id="scrollBox"></div>
+
+<script>
+
+var ring = document.getElementById('ring');
+    var rotateRing = 0;
+    var deg = 0;
+    var button = document.getElementById('button2');
+
+
+var gauge = document.getElementById('gauge');
+gauge.style.width = window.innerWidth + 'px';
+console.log(window.innerWidth); 
+
+var gradient = document.getElementById('gradient');
+var colors = ['rgba(247,203,214,0.8)', 'rgba(219,225,251,0.8)', 'rgba(204,246,250,0.8)', 'rgba(243,208,250,0.8)', 'rgba(186,248,203,0.8)', 'rgba(205,246,170,0.8)', 'rgba(244,206,147,0.8)'];
+var colorsa = ['rgba(247,203,214,0.0)', 'rgba(219,225,251,0.0)', 'rgba(204,246,250,0.0)', 'rgba(243,208,250,0.0)', 'rgba(186,248,203,0.0)', 'rgba(205,246,170,0.0)', 'rgba(244,206,147,0.0)'];
+
+var description = document.getElementById('description');
+var scrollBox = document.getElementById('scrollBox');
+var mY1 = 0;
+var mY2 = 0;
+var mY = 0;
+
+function scroll(){
+  if(mY > 0){
+    description.direction="down";
+  } else {
+    description.direction="up";
+  }
+
+  description.scrolldelay= (200 - mY * 60 ) + "";
+
+    console.log(200 - mY * 30 );
+
+}
+
+scrollBox.addEventListener('mousemove', (event) => {
+  if(mY2 == 0){
+    mY2 = event.clientY;
+  }
+    if(event.clientY != mY2){
+      mY1 = mY2;
+      mY2 = event.clientY;
+      mY = mY2 - mY1;
+    }
+
+    scroll();
+
+
+  });
+
+   scrollBox.addEventListener('mouseleave', () => {
+    description.direction="up";
+    description.scrolldelay="200";
+  });
+
+
+button.addEventListener('mouseenter', () => {
+    rotateRing = 1;
+    rotate();
+  });
+  
+button.addEventListener('mouseleave', () => {
+    rotateRing = 0;
+  });
+
+ring.addEventListener('mouseenter', () => {
+    rotateRing = 1;
+    rotate();
+  });
+  
+ ring.addEventListener('mouseleave', () => {
+    rotateRing = 0;
+  });
+
+  function rotate(){
+    if(rotateRing == 1){
+        ring.style.transform = 'rotate(' + deg + 'deg)';
+        deg += 3;
+        console.log(deg);
+        requestAnimationFrame(rotate);
+    }
+  }
+
+let lastTime = 0;
+
+  function animate(time) {
 	
-	</div>
-	
-	
-<!--PC version-->
-	
-	<div class="PC">
-	
-	<div>
-	  <h3><a href="index.html" class="Nav">XIYA LI</a></h3>
-	  <h4><a href="UIUX.html" class="Nav1">UI / UX</a></h4>
-		<h4><a href="ProductDesign.html" class="Nav2">Product</a></h4>
-		<h4><a href="About.html" class="Nav3">About</a></h4>
-	</div>
-	
-	<div class="Introduction">
-		
-		<div class="three">
-			<h3 class="About">About</h3>
-			<div></div>
-			<p>Hi! I am a senior in the industrial design program at the University of Illinois, Urbana
-				Champaign. My working experience encompasses product design, user interface, and
-				user experience design.
-			</p>
-			<div></div>
-			
-			<p> <a href="Resume 2020.pdf" download="Resume 2020.pdf"><u>Resume (PDF, 53 KB)</u></a> <br> <a href="mailto:xiyali2@illinois.edu">Email:  xiyali2@illinois.edu</a></p>
-			<div></div>
-		
-			<p>
-				<br><br>
-Research
-			<br><br>
-My research studies user behaviors in both physical and digital experience in design,
-creating products that communicate their ideas effectively. Instead of passively applying
-all of the user needs in design, I select them discernibly and point out the best options
-for the users. The main focus of my research is to bring changes in quality, rather than
-mere quantity or novelty. I am interested in sustainable products and services that leave
-positive impacts on people’s lives and their living environment. With more and more
-companies invest in research in sustainability, turning perspectives in traditional product
-designs and services can be challenging but still deliverable under careful consideration
-and validation.
-			<br><br>
-			</p>
-			<p>
-				<br><br>
-Ideation
-			<br><br>
-The understanding of the working mechanism in both physical structures in products
-and coding language in UI/UX projects helps me to deliver a robust and feasible design
-that creates differentiable products and services and adds value to the current market. I
-have accumulated skills in both research and ideation that allows me to be good at
-working around with constraints, define design goals within reach, and create the
-designs that align with the goal.</p>
-		
-		
-			
-			</div>
-	</div>
-		
-		
-		<div class="divider"></div>
-	
-	</div>
-	
+    if (time - lastTime >= 3500) {
+
+  let i = Math.floor(Math.random() * 7);
+  let temp1 = colors[i];
+colors[i] = colors[6-i];
+colors[6-i] = temp1;
+
+let temp2 = colorsa[i];
+colorsa[i] = colorsa[6-i];
+colorsa[6-i] = temp2;
+
+
+gradient.style.background = 'linear-gradient(45deg,'+ colors[0] + ',' + colorsa[0] + '70%),' +  
+'linear-gradient(90deg,' + colors[1] + ',' + colorsa[1] + '70%), ' +  
+'linear-gradient(135deg,' + colors[2] + ',' +  colorsa[2] + '70%),' +  
+'linear-gradient(180deg,' + colors[3] + ',' +  colorsa[3] + '70%),' +  
+'linear-gradient(225deg,' + colors[4] + ',' +  colorsa[4] + '70%),  ' +  
+'linear-gradient(270deg,' + colors[5] + ',' +  colorsa[5] + '70%),' +  
+'linear-gradient(315deg,' + colors[6] + ',' +  colorsa[6] + '70%)';
+
+lastTime = time;
+
+    }
+
+
+requestAnimationFrame(animate);
+
+}
+
+animate();
+
+</script>
 </body>
-	
-		<script src="javascript.js"></script>
+</html> 
 
-	
-	
-	
-</html>
+
