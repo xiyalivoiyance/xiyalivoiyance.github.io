@@ -85,14 +85,14 @@
     
 <body>
     <!-- <img src="../website/img/bg.png"  id="background"> -->
-    <img src="../website/img/cam.png"  id="cam">
-    <a href="about.html"> <img src="../website/img/button.png"  id="button"> </a>
-    <a href="about.html"> <img src="../website/img/iris.png"  id="iris"> </a>
+    <img src="img/cam.png"  id="cam">
+    <a href="about.html"> <img src="img/button.png"  id="button"> </a>
+    <a href="about.html"> <img src="img/iris.png"  id="iris"> </a>
 
     <div class="scroll">
-        <a href="../website/project/touch_up.html"><img src="../website/img/00.png"  id="p1" class="hover"></a>
-        <a href="../website/project/flvw.html"><img src="../website/img/10.png"  id="p2" class="hover"></a>
-        <a href="../website/project/autoport.html"><img src="../website/img/20.png"  id="p3" class="hover"></a>
+        <a href="project/touch_up.html"><img src="img/00.png"  id="p1" class="hover"></a>
+        <a href="project/flvw.html"><img src="img/10.png"  id="p2" class="hover"></a>
+        <a href="project/autoport.html"><img src="img/20.png"  id="p3" class="hover"></a>
     </div>
    
 
@@ -143,11 +143,11 @@ const imgs = document.querySelectorAll('.hover');
 function hoverImage(){
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].addEventListener('mouseenter', () => {
-            imgs[i].src = '../website/img/' + i + '1.png';
+            imgs[i].src = 'img/' + i + '1.png';
   });
 
   imgs[i].addEventListener('mouseleave', () => {
-            imgs[i].src = '../website/img/' + i + '0.png';
+            imgs[i].src = 'img/' + i + '0.png';
   });
 
 }
