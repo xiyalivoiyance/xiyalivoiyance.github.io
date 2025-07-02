@@ -11,17 +11,8 @@
 }
 
 
-
-    /* .background{
-        width:110%;
-        height:110%;
-       margin-left: -10px;
-       margin-top: -10px;
-      
-    } */
-
     body {
-  background-image: url('../website/img/bg.png');
+  background-image: url('img/bg.png');
   background-repeat: no-repeat;
   background-size: 120% auto;
   background-position: center;
@@ -179,7 +170,6 @@ iris.addEventListener('mouseenter', () => {
     if(rotateIris == 1){
         iris.style.transform = 'rotate(' + deg + 'deg)';
         deg += 3;
-        console.log(deg);
         requestAnimationFrame(rotate);
     }
   }

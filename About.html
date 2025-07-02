@@ -70,13 +70,33 @@ top: 0;
       line-height: 2;
     }
 
-    #description{
+            #scrollFrame{
+    width: 460px;
+      height:50px;
+      margin-left: 900px;
+      margin-top: 470px;
+      overflow:hidden;
+      position:absolute;
+    }
+
+       #past{
       font: medium "Jost";
       color: white;
       width: 460px;
-      height:50px;
-      margin-left: 900px;
-      margin-top: 480px;
+      /* height:50px; */
+      font-size: 15px;
+      line-height: 1.5;
+
+      transform: translateY(50px);
+      /* 50 -> -200 */
+
+    }
+
+    #description{
+      font: medium "Jost";
+      color: white;
+      /* width: 460px; */
+      /* height:50px; */
       position:absolute;
       font-size: 15px;
       line-height: 1.5;
@@ -90,6 +110,8 @@ top: 0;
       margin-top: 380px;
       position:absolute;
     }
+
+
 
   #headshot {
             margin-top: 265px;
@@ -131,14 +153,22 @@ top: 0;
     
    
 
-    <marquee direction="up" scrolldelay="200" id="description">
+    <!-- <marquee direction="up" scrolldelay="200" id="description">
 Hi! I am an industrial designer. <br>
 My design focuses on ergonomics and positive emotion by appropriate forms and colours. I am passionate about different approaches to sustainability in design, such as modularity, repairability, and performance structures. <br> <br>   
 Industrial design(BFA) University of Illinois at Urbana-Champaign  <br>   <br>   
 Design products(MA) Royal College of Art 
-    </marquee>
+    </marquee> -->
 
-     <div id="scrollBox"></div>
+
+<div id="scrollFrame">
+        <div id="past">
+Hi! I am an industrial designer. <br>
+My design focuses on ergonomics and positive emotion by appropriate forms and colours. I am passionate about different approaches to sustainability in design, such as modularity, repairability, and performance structures. <br> <br>   
+Industrial design(BFA) University of Illinois at Urbana-Champaign  <br>   <br>   
+Design products(MA) Royal College of Art </div>
+</div>    
+<div id="scrollBox"></div>
 
 <script>
 
@@ -156,24 +186,66 @@ var gradient = document.getElementById('gradient');
 var colors = ['rgba(247,203,214,0.8)', 'rgba(219,225,251,0.8)', 'rgba(204,246,250,0.8)', 'rgba(243,208,250,0.8)', 'rgba(186,248,203,0.8)', 'rgba(205,246,170,0.8)', 'rgba(244,206,147,0.8)'];
 var colorsa = ['rgba(247,203,214,0.0)', 'rgba(219,225,251,0.0)', 'rgba(204,246,250,0.0)', 'rgba(243,208,250,0.0)', 'rgba(186,248,203,0.0)', 'rgba(205,246,170,0.0)', 'rgba(244,206,147,0.0)'];
 
-var description = document.getElementById('description');
+// var description = document.getElementById('description');
 var scrollBox = document.getElementById('scrollBox');
+var past = document.getElementById('past');
+var scrollFrame = document.getElementById('scrollFrame');
 var mY1 = 0;
 var mY2 = 0;
 var mY = 0;
+var hover = false;
+var speed = .5;
+
 
 function scroll(){
+    var matrix = window.getComputedStyle(past).transform;
+  var value = matrix.match(/matrix.*\((.+)\)/)[1].split(', ');
+  var cY = parseFloat(value[5]);
+
+
+if(hover && (mY != 1) && (mY != -1)){
+
   if(mY > 0){
-    description.direction="down";
+    //scroll down
+
+      if(cY <= 40){
+   cY += mY*10;
   } else {
-    description.direction="up";
+    cY = -200;
   }
 
-  description.scrolldelay= (200 - mY * 60 ) + "";
+  
 
-    console.log(200 - mY * 30 );
+  } else {
+     //scroll up
+    console.log(cY);
+  if(cY >= -199){
+     cY -= mY*-10;
+  } else {
+    cY = 50;
+  }
+
+  
+
+  }
+
+
+} else{
+  if(cY >= -199){
+     cY -= speed;
+  } else {
+    cY = 50;
+  }
+ 
+}
+
+past.style.transform = 'translateY(' + cY + 'px)';
+
+ requestAnimationFrame(scroll);
 
 }
+
+scroll();
 
 scrollBox.addEventListener('mousemove', (event) => {
   if(mY2 == 0){
@@ -184,15 +256,14 @@ scrollBox.addEventListener('mousemove', (event) => {
       mY2 = event.clientY;
       mY = mY2 - mY1;
     }
-
-    scroll();
-
+    hover = true;
 
   });
 
    scrollBox.addEventListener('mouseleave', () => {
-    description.direction="up";
-    description.scrolldelay="200";
+    hover = false;
+    speed = .5;
+
   });
 
 
@@ -218,7 +289,6 @@ ring.addEventListener('mouseenter', () => {
     if(rotateRing == 1){
         ring.style.transform = 'rotate(' + deg + 'deg)';
         deg += 3;
-        console.log(deg);
         requestAnimationFrame(rotate);
     }
   }
