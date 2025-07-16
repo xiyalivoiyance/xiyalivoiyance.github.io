@@ -239,6 +239,11 @@ iris.addEventListener('mouseenter', () => {
     } else {
       popup.style.visibility = 'hidden';
     }
+
+    if(window.innerWidth < 768){
+requestMotionPermission();
+rotate();
+}
   }
 
   resizePopup();
@@ -299,9 +304,7 @@ function handleMotion(event) {
 
 }
 
-if(window.innerWidth < 768){
-document.addEventListener("click", requestMotionPermission);
-}
+
 
 
 

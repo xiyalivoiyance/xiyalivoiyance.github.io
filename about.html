@@ -412,9 +412,25 @@ animate();
 
   var headshot = document.getElementById('headshot');
 
-  // console.log(headshot.offsetWidth);
-  // console.log(headshot.offsetHeight);
-//456, 445
+
+  var popup = document.getElementById('popup');
+  var message = document.getElementById('message');
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+  function resizePopup(){
+     if(width < height){
+      popup.style.visibility = 'visible';
+    } else {
+      popup.style.visibility = 'hidden';
+    }
+
+    if(window.innerWidth < 768){
+requestMotionPermission();
+rotate();
+}
+  }
+
 
   window.addEventListener('resize', () => {
     console.log(headshot.offsetHeight);
