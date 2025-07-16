@@ -241,6 +241,7 @@ iris.addEventListener('mouseenter', () => {
     }
 
     if(window.innerWidth < 768){
+      motion.textContent = "permission requested";
 requestMotionPermission();
 rotate();
 }
@@ -259,6 +260,7 @@ rotate();
     } else {
       popup.style.visibility = 'hidden';
     }
+
 });
 
 
@@ -273,6 +275,7 @@ function requestMotionPermission() {
           window.addEventListener('devicemotion', handleMotion);
         } else {
           console.warn("Permission not granted for devicemotion");
+          motion.textContent = "Permission not granted for devicemotion";
         }
       })
       .catch(console.error);
