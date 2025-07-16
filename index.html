@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 
     <style>
 
@@ -16,7 +17,14 @@
   background-repeat: no-repeat;
   background-size: 120% auto;
   background-position: center;
+  background-color: #C4C4C4;
   overflow: hidden;
+}
+
+#base{
+  position: absolute;
+   width: 100vw;
+  height: 100vh;
 }
 
     #cam{
@@ -27,42 +35,43 @@
 }
 
 #button{
-       margin-top: 700px;
-       margin-left: 635px;
+       /* margin-top: 700px;
+       margin-left: 635px; */
+       top:82.3%;
+       left: 43.3%;
+       width: 14%;
        position:absolute;
     }
 
     #iris{
-       margin-top: 700px;
-       margin-left: 680px;
+       top:82.75%;
+       left: 46.6%;
+       width: 7%;
        position:absolute;
        transition: transform 0.3s ease;
-       width: 100px;
     }
 
     #p1{
-        width: 400px;
-       /* margin-top: 200px;
-       margin-left: 900px; */
+        width: 100%;
     }
 
     #p2{
-        width: 400px;
-       margin-top: 50px;
+        width: 100%;
+       margin-top: 20%;
     }
 
     #p3{
-        width: 400px;
-        margin-top: 50px;
+        width: 100%;
+        margin-top: 22%;
     }
 
     .scroll {
   overflow: auto;
-  margin-top: 100px;
-  margin-left: 900px;
+  margin-top: 5%;
+  margin-left: 64%;
   position: absolute;
-  width: 400px;
-  height: 680px;
+  width: 28%;
+  height: 80%;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -71,13 +80,32 @@
   display: none; 
 }
 
+#popup {
+  visibility: hidden; 
+  position:absolute;
+  background-color: #C4C4C4;
+  width: 100%;
+  height: 100%;
+}
+
+#message {
+   font: medium "Jost";
+      color: white;
+ margin-top: 50%;
+  margin-left: 30%;
+      position:absolute;
+      text-align: center;
+      font-size: 13px;
+}
 
     </style>
     
 <body>
-    <!-- <img src="../website/img/bg.png"  id="background"> -->
     <img src="img/cam.png"  id="cam">
-    <a href="about.html"> <img src="img/button.png"  id="button"> </a>
+
+    <div id="base">
+
+<a href="about.html"> <img src="img/button.png"  id="button"> </a>
     <a href="about.html"> <img src="img/iris.png"  id="iris"> </a>
 
     <div class="scroll">
@@ -85,7 +113,14 @@
         <a href="project/flvw.html"><img src="img/10.png"  id="p2" class="hover"></a>
         <a href="project/autoport.html"><img src="img/20.png"  id="p3" class="hover"></a>
     </div>
-   
+
+    </div>
+    
+   <div id="popup">
+  <div id="message">
+    <span style="font-size: 10px;"> PLEASE ROTATE -> </span> <strong> LANDSCAPE </strong> <span style="font-size: 10px;"> MODE </span> 
+  </div>
+</div>
 
 <script>
 
@@ -174,6 +209,28 @@ iris.addEventListener('mouseenter', () => {
     }
   }
   
+
+
+  //resize
+
+  var cam = document.getElementById('cam');
+  var base = document.getElementById('base');
+
+  var popup = document.getElementById('popup');
+  var message = document.getElementById('message');
+
+  window.addEventListener('resize', () => {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+    cam.style.width = '100vw';
+    base.style.width = '100vw';
+    base.style.height = '100vh';
+    if(width < height){
+      popup.style.visibility = 'visible';
+    } else {
+      popup.style.visibility = 'hidden';
+    }
+});
 
 
 </script>
