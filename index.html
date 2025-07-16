@@ -218,10 +218,20 @@ iris.addEventListener('mouseenter', () => {
 
   var popup = document.getElementById('popup');
   var message = document.getElementById('message');
-
-  window.addEventListener('resize', () => {
   const width = window.innerWidth;
   const height = window.innerHeight;
+
+  function resizePopup(){
+     if(width < height){
+      popup.style.visibility = 'visible';
+    } else {
+      popup.style.visibility = 'hidden';
+    }
+  }
+
+  resizePopup();
+
+  window.addEventListener('resize', () => {
     cam.style.width = '100vw';
     base.style.width = '100vw';
     base.style.height = '100vh';

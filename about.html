@@ -70,25 +70,38 @@ top: 0;
     #xiya{
       font: medium "Jost";
       color: white;
-      font-size: 18px;
-      letter-spacing: 7px;
+      letter-spacing: .5vw;
+       left: 9.8vw;
+      top: 28.5vw;
+      width: 20vw;
+      height: auto;
+      position:absolute;
     }
+
+     #xiya a {font-size:4 vw;}
 
  #info{
       font: medium "Jost";
       color: white;
-      left: 8.5%;
-      top: 50.5%;
+      left: 3vw;
+      top: 27vw;
+      width: 20vw;
+      height: auto;
       position:absolute;
       text-align: center;
-      font-size: 13px;
-      line-height: 2;
+       line-height: 2vw;
+      
     }
+
+ #info a {
+  font-size: .9vw;
+ 
+ }
 
 
 
             #scrollFrame{
-    width: 40%;
+      width: 40%;
       height:10%;
       left: 61%;
       top: 54.5%;
@@ -100,7 +113,6 @@ top: 0;
       font: medium "Jost";
       color: white;
       width: 80%;
-      font-size: 15px;
       line-height: 1.5;
 
       transform: translateY(50px);
@@ -108,22 +120,20 @@ top: 0;
 
     }
 
-    #description{
-      font: medium "Jost";
-      color: white;
-      /* width: 460px; */
-      /* height:50px; */
-      position:absolute;
-      font-size: 15px;
-      line-height: 1.5;
-
-    }
+    #past a {font-size:1vw;}
 
     #scrollBox{
-      width: 550px;
+      /* width: 550px;
       height:250px;
       margin-left: 850px;
-      margin-top: 380px;
+      margin-top: 380px; */
+
+         width: 40%;
+      height:10%;
+      left: 61%;
+      top: 54.5%;
+
+
       position:absolute;
     }
 
@@ -134,11 +144,17 @@ top: 0;
             margin-left: 368px; */
         
 
-        top:31.6%;
+        /* top:31.6%;
        left: 24.8%;
        width: 31%;
-      height: 53%;
-      border-radius: 200%; 
+      height: 53%; */
+
+      top:18.3vw;
+      left: 25.3vw;
+      width: 30vw;
+      height: 30vw;
+
+      border-radius: 300%; 
             object-fit: cover;          /* fills the box and crops excess */
             object-position: center;
              position:absolute;
@@ -167,22 +183,23 @@ top: 0;
     <a href="index.html"> <img src="img/button2.png"  id="button2"> </a>
     <a href="index.html"> <img src="img/cone&rod.png"  id="ring"> </a>
 
-
-    <h3 id="info"><span id="xiya">XIYA LI</span> <br> <br> 
+<span id="xiya"><a>XIYA LI</a></span> 
+    <h3 id="info"><br> <br> 
       <a href="cv.pdf">CV</a> <br> 
       <a href="2020/index.html">2016 - 2020</a> <br> 
       <a href="mailto:xiyalixiya@outlook.com">xiyalixiya@outlook.com</a> 
-      <br> @xiyatimetravelling 
+      <br> <a> @xiyatimetravelling </a>
     </h3>
     
    
 <div id="scrollFrame">
         <div id="past">
-Hi! I am an industrial designer. <br>
+<a>Hi! I am an industrial designer. <br>
 My design focuses on ergonomics and positive emotion by appropriate forms and colours. I am passionate about different approaches to sustainability in design, such as modularity, repairability, and performance structures. <br> <br>   
 Industrial design(BFA) University of Illinois at Urbana-Champaign  <br>   <br>   
-Design products(MA) Royal College of Art </div>
+Design products(MA) Royal College of Art </div></a>
 </div>    
+
 <div id="scrollBox"></div>
 
 
@@ -209,7 +226,7 @@ var gradient = document.getElementById('gradient');
 var colors = ['rgba(247,203,214,0.8)', 'rgba(219,225,251,0.8)', 'rgba(204,246,250,0.8)', 'rgba(243,208,250,0.8)', 'rgba(186,248,203,0.8)', 'rgba(205,246,170,0.8)', 'rgba(244,206,147,0.8)'];
 var colorsa = ['rgba(247,203,214,0.0)', 'rgba(219,225,251,0.0)', 'rgba(204,246,250,0.0)', 'rgba(243,208,250,0.0)', 'rgba(186,248,203,0.0)', 'rgba(205,246,170,0.0)', 'rgba(244,206,147,0.0)'];
 
-// var description = document.getElementById('description');
+
 var scrollBox = document.getElementById('scrollBox');
 var past = document.getElementById('past');
 var scrollFrame = document.getElementById('scrollFrame');
@@ -271,6 +288,7 @@ past.style.transform = 'translateY(' + cY + 'px)';
 scroll();
 
 scrollBox.addEventListener('mousemove', (event) => {
+  console.log("enter");
   if(mY2 == 0){
     mY2 = event.clientY;
   }
@@ -377,18 +395,18 @@ animate();
     var hit = headshot.offsetHeight;
     // console.log(wth + "...." + wth/31*53);
     // headshot.style.height = 53 (hit - 445) + '%';
-    headshot.style.height = ((((hit - 445) - (100-445)) / ((600-445) - (100-445))) * (53 - 53*0.7) + 53*0.7) + '%';
+    // headshot.style.height = ((((hit - 445) - (100-445)) / ((100-445) - (100-445))) * (53 - 53*0.7) + 53*0.7) + '%';
 
-  if(width <= 500){
-    past.style.fontSize = "11px";
-    info.style.fontSize = "10px";
-    xiya.style.fontSize = "13px";
+  // if(width <= 500){
+  //   past.style.fontSize = "11px";
+  //   info.style.fontSize = "10px";
+  //   xiya.style.fontSize = "13px";
    
-  } else{
-    past.style.fontSize = "15px";
-    info.style.fontSize = "13px";
-    xiya.style.fontSize = "18px";
-  }
+  // } else{
+  //   past.style.fontSize = "15px";
+  //   info.style.fontSize = "13px";
+  //   xiya.style.fontSize = "18px";
+  // }
 
 });
 
