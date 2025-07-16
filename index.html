@@ -98,6 +98,16 @@
       font-size: 30px;
 }
 
+#motion {
+   font: medium "Jost";
+      color: white;
+ margin-top: 20%;
+  margin-left: 30%;
+      position:absolute;
+      text-align: center;
+      font-size: 30px;
+}
+
     </style>
     
 <body>
@@ -121,6 +131,8 @@
     <span style="font-size: 20px;"> PLEASE ROTATE -> </span> <strong> LANDSCAPE </strong> <span style="font-size: 10px;"> MODE </span> 
   </div>
 </div>
+
+<div id="motion">asdf</div>
 
 <script>
 
@@ -243,6 +255,57 @@ iris.addEventListener('mouseenter', () => {
       popup.style.visibility = 'hidden';
     }
 });
+
+
+ var motion = document.getElementById('motion');
+
+function requestMotionPermission() {
+  if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+    DeviceMotionEvent.requestPermission()
+      .then(permissionState => {
+        if (permissionState === 'granted') {
+          // ✅ Now safe to add your event listener
+          window.addEventListener('devicemotion', handleMotion);
+        } else {
+          console.warn("Permission not granted for devicemotion");
+        }
+      })
+      .catch(console.error);
+  } else {
+    // For Android or non-iOS devices (no permission prompt)
+    window.addEventListener('devicemotion', handleMotion);
+  }
+}
+
+// Your motion handler function
+function handleMotion(event) {
+  const x = event.accelerationIncludingGravity.x;
+  const y = event.accelerationIncludingGravity.y;
+  const z = event.accelerationIncludingGravity.z;
+
+  // if(!((x >= .6) && (x <= .9))){
+
+
+  // bgX = x*20;
+  // bgY = y*10+10;
+   
+  //   // console.log("bgX: " + bgX + "bgY: " + bgY);
+  // document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
+   
+
+  // }
+
+  motion.textContent = "x:" + x + "y:" + y + "z:" + z;
+
+}
+
+if(window.innerWidth < 768){
+document.addEventListener("click", requestMotionPermission);
+}
+
+
+
+
 
 
 </script>
