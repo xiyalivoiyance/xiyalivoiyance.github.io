@@ -100,7 +100,7 @@
 
 #motion {
    font: medium "Jost";
-      color: blue;
+      color: purple;
  margin-top: 20%;
   margin-left: 30%;
       position:absolute;
@@ -239,6 +239,7 @@ iris.addEventListener('mouseenter', () => {
     } else {
       popup.style.visibility = 'hidden';
     }
+     motion.textContent = "width" + width;
 
     if(window.innerWidth < 768){
       motion.textContent = "permission requested";
