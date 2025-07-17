@@ -108,7 +108,7 @@
 
 #motion {
    font: medium "Jost";
-      color: tomato;
+      color: yellow;
  margin-top: 20%;
   margin-left: 30%;
       position:absolute;
@@ -282,8 +282,6 @@ iris.addEventListener('mouseenter', () => {
 });
 
 gyroscope.addEventListener('click', () => {
-console.log("clicked");
-
       gyroscope.style.visibility = 'hidden';
  if(window.innerWidth < 1000){
       
@@ -314,7 +312,7 @@ bgY = y+10;
 document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
 
 
-  // motion.textContent = "x:" + x + "y:" + y + "z:" + z;
+  motion.textContent = "bgX:" + bgX + "bgY:" + bgY;
 
 }
 
