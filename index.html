@@ -233,6 +233,8 @@ iris.addEventListener('mouseenter', () => {
   const width = window.innerWidth;
   const height = window.innerHeight;
 
+   var motion = document.getElementById('motion');
+
   function resizePopup(){
      if(width < height){
       popup.style.visibility = 'visible';
@@ -265,7 +267,7 @@ rotate();
 });
 
 
- var motion = document.getElementById('motion');
+
 
 function requestMotionPermission() {
   if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
