@@ -100,7 +100,7 @@
 
 #motion {
    font: medium "Jost";
-      color: purple;
+      color: black;
  margin-top: 20%;
   margin-left: 30%;
       position:absolute;
@@ -244,7 +244,7 @@ iris.addEventListener('mouseenter', () => {
      
 
     if(window.innerWidth < 1000){
-      motion.textContent = "permission requested";
+      
 requestMotionPermission();
 rotate();
 }
@@ -267,29 +267,6 @@ rotate();
 });
 
 
-
-
-function requestMotionPermission() {
-  if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
-    DeviceMotionEvent.requestPermission()
-      .then(permissionState => {
-        if (permissionState === 'granted') {
-          // ✅ Now safe to add your event listener
-          window.addEventListener('devicemotion', handleMotion);
-          motion.textContent = "listener added";
-        } else {
-          console.warn("Permission not granted for devicemotion");
-          motion.textContent = "Permission not granted for devicemotion";
-        }
-      })
-      .catch(console.error);
-  } else {
-    // For Android or non-iOS devices (no permission prompt)
-    motion.textContent = "listener added";
-    window.addEventListener('devicemotion', handleMotion);
-  }
-}
-
 // Your motion handler function
 function handleMotion(event) {
   const x = event.accelerationIncludingGravity.x;
@@ -311,6 +288,30 @@ function handleMotion(event) {
   motion.textContent = "x:" + x + "y:" + y + "z:" + z;
 
 }
+
+
+function requestMotionPermission() {
+  motion.textContent = "permission requested";
+  if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+    DeviceMotionEvent.requestPermission()
+      .then(permissionState => {
+        if (permissionState === 'granted') {
+          // ✅ Now safe to add your event listener
+          window.addEventListener('devicemotion', handleMotion);
+          motion.textContent = "listener added";
+        } else {
+          console.warn("Permission not granted for devicemotion");
+          motion.textContent = "Permission not granted for devicemotion";
+        }
+      })
+      .catch(console.error);
+  } else {
+    // For Android or non-iOS devices (no permission prompt)
+    motion.textContent = "listener added";
+    window.addEventListener('devicemotion', handleMotion);
+  }
+}
+
 
 
 
