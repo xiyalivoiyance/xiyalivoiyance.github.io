@@ -88,7 +88,7 @@
   height: 100%;
 }
 
-#message {
+.message {
    font: medium "Jost";
       color: white;
  margin-top: 50%;
@@ -98,9 +98,17 @@
       font-size: 30px;
 }
 
+#gyroscope {
+  visibility: hidden; 
+  position:absolute;
+  background-color: #AAAAAA;
+  width: 100%;
+  height: 100%;
+}
+
 #motion {
    font: medium "Jost";
-      color: green;
+      color: tomato;
  margin-top: 20%;
   margin-left: 30%;
       position:absolute;
@@ -133,13 +141,17 @@
     </div>
     
    <div id="popup">
-  <div id="message">
+  <div class="message">
     <span style="font-size: 20px;"> PLEASE ROTATE -> </span> <strong> LANDSCAPE </strong> <span style="font-size: 10px;"> MODE </span> 
   </div>
 </div>
 
+<button id="gyroscope"><div class="message">
+     <strong> CLICK </strong> <span style="font-size: 10px;"> -> OPEN GYROSCOPE </span> 
+  </div></button>
+
 <div id="motion">asdf</div>
-<button id="click">click</button>
+
 
 <script>
 
@@ -236,16 +248,17 @@ iris.addEventListener('mouseenter', () => {
   var base = document.getElementById('base');
 
   var popup = document.getElementById('popup');
-  var message = document.getElementById('message');
+  var gyroscope = document.getElementById('gyroscope');
   const width = window.innerWidth;
   const height = window.innerHeight;
 
    var motion = document.getElementById('motion');
-      var click = document.getElementById('click');
+      // var click = document.getElementById('click');
 
   function resizePopup(){
      if(width < height){
       popup.style.visibility = 'visible';
+      gyroscope.style.visibility = 'visible';
     } else {
       popup.style.visibility = 'hidden';
     }
@@ -268,8 +281,10 @@ iris.addEventListener('mouseenter', () => {
 
 });
 
-click.addEventListener('click', () => {
+gyroscope.addEventListener('click', () => {
 console.log("clicked");
+
+      gyroscope.style.visibility = 'hidden';
  if(window.innerWidth < 1000){
       
 requestMotionPermission();
@@ -285,43 +300,39 @@ rotate();
 function handleMotion(event) {
   const x = event.accelerationIncludingGravity.x;
   const y = event.accelerationIncludingGravity.y;
-  const z = event.accelerationIncludingGravity.z;
 
-  // if(!((x >= .6) && (x <= .9))){
+if(x<0){
+  x *= -1;
+}
+
+if(y<0){
+  y *= -1;
+}
+
+bgX = x/10*20;
+bgY = y+10;
+document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
 
 
-  // bgX = x*20;
-  // bgY = y*10+10;
-   
-  //   // console.log("bgX: " + bgX + "bgY: " + bgY);
-  // document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
-   
-
-  // }
-
-  motion.textContent = "x:" + x + "y:" + y + "z:" + z;
+  // motion.textContent = "x:" + x + "y:" + y + "z:" + z;
 
 }
 
 
 function requestMotionPermission() {
-  motion.textContent = "permission requested";
   if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
     DeviceMotionEvent.requestPermission()
       .then(permissionState => {
         if (permissionState === 'granted') {
           // ✅ Now safe to add your event listener
           window.addEventListener('devicemotion', handleMotion);
-          motion.textContent = "listener added";
         } else {
           console.warn("Permission not granted for devicemotion");
-          motion.textContent = "Permission not granted for devicemotion";
         }
       })
       .catch(console.error);
   } else {
     // For Android or non-iOS devices (no permission prompt)
-    motion.textContent = "listener added";
     window.addEventListener('devicemotion', handleMotion);
   }
 }
