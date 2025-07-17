@@ -258,9 +258,12 @@ iris.addEventListener('mouseenter', () => {
   function resizePopup(){
      if(width < height){
       popup.style.visibility = 'visible';
-      gyroscope.style.visibility = 'visible';
+      
     } else {
       popup.style.visibility = 'hidden';
+    }
+    if(window.innerWidth < 1000){
+      gyroscope.style.visibility = 'visible';
     }
      
   }
@@ -313,8 +316,8 @@ y = Math.floor(y);
 //   z *= -1;
 // }
 
-bgX = y*3;
-bgY = x*3;
+bgX = y*3-10;
+bgY = x*3-10;
 document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
 
 
