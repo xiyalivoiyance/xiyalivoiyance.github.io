@@ -425,8 +425,9 @@ animate();
       popup.style.visibility = 'hidden';
     }
 
-    if(window.innerWidth < 768){
+    if(window.innerWidth < 1000){
 requestMotionPermission();
+rotateIris = 1;
 rotate();
 }
   }

@@ -100,7 +100,7 @@
 
 #motion {
    font: medium "Jost";
-      color: black;
+      color: red;
  margin-top: 20%;
   margin-left: 30%;
       position:absolute;
@@ -242,12 +242,6 @@ iris.addEventListener('mouseenter', () => {
       popup.style.visibility = 'hidden';
     }
      
-
-    if(window.innerWidth < 1000){
-      
-requestMotionPermission();
-rotate();
-}
   }
 
   resizePopup();
@@ -263,6 +257,18 @@ rotate();
     } else {
       popup.style.visibility = 'hidden';
     }
+
+});
+
+window.addEventListener('touchstart', () => {
+
+ if(window.innerWidth < 1000){
+      
+requestMotionPermission();
+rotateIris = 1;
+rotate();
+}
+
 
 });
 
