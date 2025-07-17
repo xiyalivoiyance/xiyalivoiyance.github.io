@@ -106,7 +106,7 @@
   height: 100%;
 }
 
-#motion {
+/* #motion {
    font: medium "Jost";
       color: rgb(0, 255, 106);
  margin-top: 20%;
@@ -114,7 +114,7 @@
       position:absolute;
       text-align: center;
       font-size: 30px;
-}
+} */
 
 #click {
  width:100px;
@@ -150,7 +150,7 @@
      <strong> CLICK </strong> <span style="font-size: 20px;"> -> OPEN GYROSCOPE </span> 
   </div></button>
 
-<div id="motion">asdf</div>
+<!-- <div id="motion">asdf</div> -->
 
 
 <script>
@@ -252,7 +252,7 @@ iris.addEventListener('mouseenter', () => {
   const width = window.innerWidth;
   const height = window.innerHeight;
 
-   var motion = document.getElementById('motion');
+  //  var motion = document.getElementById('motion');
       // var click = document.getElementById('click');
 
   function resizePopup(){
@@ -314,18 +314,18 @@ y = Math.floor(y);
 //   z *= -1;
 // }
 
-bgX = x/10*30;
-bgY = y*1.5+10;
+bgX = y/10*40;
+bgY = x*2+10;
 document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
 
 
-  motion.textContent = "x:" + x + "y:" + y;
+  // motion.textContent = "x:" + x + "y:" + y;
 
 }
 
 
 function requestMotionPermission() {
-  motion.textContent ="permission requested";
+  // motion.textContent ="permission requested";
   if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
     DeviceMotionEvent.requestPermission()
       .then(permissionState => {
