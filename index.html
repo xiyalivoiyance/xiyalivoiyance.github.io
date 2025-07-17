@@ -108,7 +108,7 @@
 
 #motion {
    font: medium "Jost";
-      color: yellow;
+      color: orange;
  margin-top: 20%;
   margin-left: 30%;
       position:absolute;
@@ -142,12 +142,12 @@
     
    <div id="popup">
   <div class="message">
-    <span style="font-size: 20px;"> PLEASE ROTATE -> </span> <strong> LANDSCAPE </strong> <span style="font-size: 10px;"> MODE </span> 
+    <span style="font-size: 20px;"> PLEASE ROTATE -> </span> <strong> LANDSCAPE </strong> <span style="font-size: 20px;"> MODE </span> 
   </div>
 </div>
 
 <button id="gyroscope"><div class="message">
-     <strong> CLICK </strong> <span style="font-size: 10px;"> -> OPEN GYROSCOPE </span> 
+     <strong> CLICK </strong> <span style="font-size: 20px;"> -> OPEN GYROSCOPE </span> 
   </div></button>
 
 <div id="motion">asdf</div>
@@ -318,6 +318,7 @@ document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
 
 
 function requestMotionPermission() {
+  motion.textContent ="permission requested";
   if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
     DeviceMotionEvent.requestPermission()
       .then(permissionState => {
