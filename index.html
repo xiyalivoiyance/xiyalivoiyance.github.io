@@ -276,6 +276,7 @@ function requestMotionPermission() {
         if (permissionState === 'granted') {
           // ✅ Now safe to add your event listener
           window.addEventListener('devicemotion', handleMotion);
+          motion.textContent = "listener added";
         } else {
           console.warn("Permission not granted for devicemotion");
           motion.textContent = "Permission not granted for devicemotion";
@@ -284,6 +285,7 @@ function requestMotionPermission() {
       .catch(console.error);
   } else {
     // For Android or non-iOS devices (no permission prompt)
+    motion.textContent = "listener added";
     window.addEventListener('devicemotion', handleMotion);
   }
 }
