@@ -133,6 +133,7 @@
 </div>
 
 <div id="motion">asdf</div>
+<button id="click">click</button>
 
 <script>
 
@@ -234,6 +235,7 @@ iris.addEventListener('mouseenter', () => {
   const height = window.innerHeight;
 
    var motion = document.getElementById('motion');
+      var click = document.getElementById('click');
 
   function resizePopup(){
      if(width < height){
@@ -260,7 +262,7 @@ iris.addEventListener('mouseenter', () => {
 
 });
 
-window.addEventListener('touchstart', () => {
+click.addEventListener('onclick', () => {
 
  if(window.innerWidth < 1000){
       
