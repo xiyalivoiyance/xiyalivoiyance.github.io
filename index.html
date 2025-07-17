@@ -241,9 +241,9 @@ iris.addEventListener('mouseenter', () => {
     } else {
       popup.style.visibility = 'hidden';
     }
-     motion.textContent = "width" + width;
+     
 
-    if(window.innerWidth < 768){
+    if(window.innerWidth < 1000){
       motion.textContent = "permission requested";
 requestMotionPermission();
 rotate();
