@@ -108,7 +108,7 @@
 
 #motion {
    font: medium "Jost";
-      color: rgb(255, 115, 0);
+      color: rgb(55, 0, 255);
  margin-top: 20%;
   margin-left: 30%;
       position:absolute;
@@ -296,7 +296,6 @@ rotate();
 
 // Your motion handler function
 function handleMotion(event) {
-  alert("listener added");
   const x = event.accelerationIncludingGravity.x;
   const y = event.accelerationIncludingGravity.y;
   const z = event.accelerationIncludingGravity.z;
@@ -314,7 +313,7 @@ function handleMotion(event) {
 // }
 
 bgX = x/10*30;
-bgY = y*1.5+10;
+bgY = z*1.5+10;
 document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
 
 
