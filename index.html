@@ -98,6 +98,17 @@
       font-size: 30px;
 }
 
+#clicking {
+   font: medium "Jost";
+      color: white;
+ margin-top: -20%;
+  margin-left: 30%;
+      position:absolute;
+      text-align: center;
+      font-size: 30px;
+}
+
+
 #gyroscope {
   visibility: hidden; 
   position:absolute;
@@ -146,7 +157,7 @@
   </div>
 </div>
 
-<button id="gyroscope"><div class="message">
+<button id="gyroscope"><div id="clicking">
      <strong> CLICK </strong> <span style="font-size: 20px;"> -> OPEN GYROSCOPE </span> 
   </div></button>
 
@@ -316,8 +327,8 @@ y = Math.floor(y);
 //   z *= -1;
 // }
 
-bgX = y*3+20;
-bgY = x*3+20;
+bgX = y*3+25;
+bgY = x*3+25;
 document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
 
 
