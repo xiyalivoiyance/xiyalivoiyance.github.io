@@ -108,7 +108,7 @@
 
 #motion {
    font: medium "Jost";
-      color: rgb(0, 255, 8);
+      color: rgb(0, 255, 106);
  margin-top: 20%;
   margin-left: 30%;
       position:absolute;
@@ -296,24 +296,26 @@ rotate();
 
 // Your motion handler function
 function handleMotion(event) {
-  const x = event.accelerationIncludingGravity.x;
-  const y = event.accelerationIncludingGravity.y;
-  const z = event.accelerationIncludingGravity.z;
- x = Math.floor(x);
- y = Math.floor(y);
+  let x = event.accelerationIncludingGravity.x;
+  let y = event.accelerationIncludingGravity.y;
+  let z = event.accelerationIncludingGravity.z;
+ 
+ 
  z = Math.floor(z);
-// if(x<0){
-//   x *= -1;
-// }
-// if(y<0){
-//   y *= -1;
-// }
+if(x<0){
+  x *= -1;
+x = Math.floor(x);
+}
+if(y<0){
+  y *= -1;
+y = Math.floor(y);
+}
 // if(z<0){
 //   z *= -1;
 // }
 
 bgX = x/10*30;
-bgY = z*1.5+10;
+bgY = y*1.5+10;
 document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
 
 
