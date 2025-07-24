@@ -17,11 +17,12 @@ body{
   background-color: #FBF7F5;
 }
 
-   #ring{
+  #ring{
        margin-top: 20px;
        margin-left: 20px;
        width: 80px;
        position:fixed;
+       z-index: 3;
     }
 
     #content{
@@ -29,13 +30,21 @@ body{
   left: 0;
   width: 100%;  
    position: relative;
+   z-index: 1;
     }
-        
-#video{
+
+     #vframe{
   width: 100%;  
    position: relative;
+z-index: 1;
+    }
+
+     #video{
+  width: 100%;  
+   position: absolute;
 
     }
+
 
     </style>
     
@@ -43,9 +52,11 @@ body{
     
    <a href="../index.html"> <img src="img/cr3.png"  id="ring"> </a> 
 <img src="img/autoport.jpg"  id="content">
-    <video controls id="video">
+    
+     <div id="vframe"><video controls id="video">
   <source src="autoport.mp4" type="video/mp4" >
 </video>
+         </div>
 
 <script>
 var ring = document.getElementById('ring');
