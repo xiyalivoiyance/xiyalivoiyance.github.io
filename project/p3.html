@@ -163,7 +163,9 @@ font-size: 1.1rem;
 
 }
 
-
+#subtitle{
+margin-top: 1vh;
+}
 
     </style>
     
@@ -268,6 +270,7 @@ var photos = document.querySelectorAll('.photos');
 
 var h1 = document.querySelectorAll('h1');
 var h2 = document.querySelectorAll('h2');
+var date = document.querySelectorAll('.date')[0];
 
 
 
@@ -295,7 +298,8 @@ function setProjectWidth() {
             x.style.fontSize = '2rem';
         });
 
-
+   date.style.fontSize = '2rem';
+  
 
 
     } else {
@@ -318,7 +322,8 @@ function setProjectWidth() {
             x.style.fontSize = '0.75rem';
         });
 
-
+ date.style.fontSize = '0.75rem';
+  
 
     }
 }
