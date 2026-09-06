@@ -213,51 +213,17 @@ window.addEventListener('resize', setProjectWidth);
  banner.addEventListener('mouseenter', () => {
             banner.style.height = `8vh`;
             close.style.transform = 'rotate(90deg)';
-                    feature.style.display = 'block';   
-            ma.style.display = 'block';    
-    bfa.style.display = 'block';
-    about.style.display = 'block';
+              category.style.visibility = 'visible';
  
   })
 
    banner.addEventListener('mouseleave', () => {
             banner.style.height = `6vh`;
             close.style.transform = 'rotate(0deg)';
-            feature.style.display = 'block';    
-            ma.style.display = 'block';      
-    bfa.style.display = 'block';
-    about.style.display = 'block';
+             if(pagePos >= 100){
+      category.style.visibility = 'hidden';
+    }
 
   })
 
 
-
-  //banner
-
-
-    var banner = document.getElementById('banner');
-    var close = document.getElementById('close');
-
- banner.addEventListener('mouseenter', () => {
-            banner.style.height = `8vh`;
-            close.style.transform = 'rotate(90deg)';
-                    feature.style.display = 'block';   
-            ma.style.display = 'block';    
-    bfa.style.display = 'block';
-    about.style.display = 'block';
-
-    category.style.visibility = 'visible';
- 
-  })
-
-   banner.addEventListener('mouseleave', () => {
-            banner.style.height = `6vh`;
-            close.style.transform = 'rotate(0deg)';
-            feature.style.display = 'block';    
-            ma.style.display = 'block';      
-    bfa.style.display = 'block';
-    about.style.display = 'block';
-
-    category.style.visibility = 'hidden';
-
-  })
