@@ -167,6 +167,17 @@ width: 20vw;
   margin-right:.5vw;
 }
 
+
+h1{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 1.1rem;
+
+}
+
+
+
+
     </style>
     
 <body>
@@ -205,7 +216,7 @@ width: 20vw;
   </div>
 
   <div id="l3">
-    <h2 id="intro">Hi! I&apos;m an industrial designer. My practice specialises in user - oriented design, achieving ergonomic function and emotional resonance through deliberate form and color choices. I am passionate about sustainability - driven design approaches, including modular systems, repairability, and structural efficiency. I hold a BFA in Industrial Design from the University of Illinois at Urbana-Champaign and an MA in Design Products from the Royal College of Art.</h2>
+    <h2 id="intro">Hi! I&apos;m an industrial designer. My practice specialises in user - oriented design, achieving ergonomic function and emotional resonance through deliberate form and color choices. I am passionate about sustainability - driven design approaches, including modular systems, repairability, and structural efficiency. I hold a BFA in Industrial Design from the University of Illinois at Urbana - Champaign and an MA in Design Products from the Royal College of Art.</h2>
   </div>
 
   <div id="l4">
@@ -286,6 +297,11 @@ var ID = document.getElementById('id');
 var l3 = document.getElementById('l3');
 var l4 = document.getElementById('l4');
 
+var h1 = document.querySelectorAll('h1');
+var h2 = document.querySelectorAll('h2');
+
+
+
 
 function setProjectWidth() {
     const width = window.innerWidth;
@@ -307,6 +323,19 @@ function setProjectWidth() {
         l1.style.width = '85vw';
         home.style.removeProperty('width');
         close.style.marginLeft = 'auto';
+
+
+         h1.forEach(x => {
+            x.style.fontSize = '1.5rem';
+        });
+
+        h2.forEach(x => {
+            x.style.fontSize = '1rem';
+        });
+
+
+
+
     } else {
          icon.forEach(x => {
             x.style.width = '1vw';
@@ -320,6 +349,23 @@ function setProjectWidth() {
         l1.style.width = '100vw';
         home.style.width = '7.5vw';   
         close.style.marginLeft = '85vw';
+
+
+  h1.forEach(x => {
+            x.style.fontSize = '1.1rem';
+        });
+
+         h2.forEach(x => {
+            x.style.fontSize = '0.75rem';
+        });
+
+
+
+
+
+
+
+
     }
 }
 
