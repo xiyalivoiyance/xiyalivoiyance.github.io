@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-color: white;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+#banner{
+background-color: white;
+position: fixed; 
+width: 100vw;
+height:12vh;
+box-shadow: 0 4px 7px rgba(0, 0, 0, 0.02);
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+#l1{
+width: 100vw;
+height:10vh;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+}
+
+#home{
+font-family: 'Jost', sans-serif;
+font-weight: 560; 
+font-size: 1.1rem;
+/* width:7.5vw; */
+text-align: right;
+margin-top: 5vh;
+}
+
+#box1{
+width: 85vw;                     
+height: 0.5vh;
+margin-top: 5vh;
+/* display: block; */
+}
+
+#close{
+  height: 0.4vh;
+  margin-top: 6.4vh;
+  margin-left: 85vw;
+}
+
+h2{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 0.75rem;
+
+}
+
+#featured{
+width:85vw;
+margin-top: .2vh;
+text-align: right;
+display: none; 
+}
+
+#ma{
+width:85vw;
+margin-top:.2vh;
+text-align: right;
+display: none; 
+}
+
+#bfa{
+width:85vw;
+margin-top: .2vh;
+text-align: right;
+display: none; 
+}
+
+#about{
+width:85vw;
+margin-top:1vh;
+margin-top:1vh;
+text-align: right;
+display: none; 
+}
+
+.icon{
+  width: 1vw;
+  margin-right:.5vw;
+}
+
+
+#content{
+background-color: white;
+margin-top: 20vh; 
+width: 83vw;
+/* height:66vh; */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+/* gap: 11vh; */
+}
+
+#l2{
+width: 83vw;
+}
+
+h3{
+font-family: 'Jost', sans-serif;
+font-weight: 600; 
+font-size: 0.75rem;
+}
+
+p{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 0.75rem;
+}
+
+.date {
+    font-size: 0.7rem;
+}
+
+.description{
+width: 28vw;
+margin-top: 2vh;
+margin-bottom: 11vh;
+}
+
+.photos{
+width: 83vw;
+margin-bottom: 11vh;
+}
+
+
+
+    </style>
+    
+<body>
+
+<div id="banner">
+  <div id="l1">
+    <a href="../index.html" id="home-link">
+    <h1 id="home">XIYA LI</h1>
+</a>
+
+ <img src="../img/close.svg"  id="close">
+  </div>
+  
+  <a href="../index.html" >
+   <h2 id="featured">Selected works</h2>
+</a>
+
+    <a href="../2025/index.html" >
+   <h2 id="ma">2023 - 2025</h2>
+</a>
+
+     <a href="../2020/index.html" >
+  <h2 id="bfa">2016 - 2020</h2>
+</a>
+ 
+     <a href="../about.html" >
+    <h2 id="about">ABOUT</h2>
+</a>
+
+</div>
+
+<div id="content">
+
+      <img src="img/p5_1.jpg" class="photos">
+
+  <div id="l2">
+    <h3 id="title">Sustainable Toaster</h3>
+    <p id="subtitle">A quality toasting service &ensp; &ensp; &ensp;  <span class="date">2018.12</span></p>
+    <p class="description">Today&apos; toasters hardly differ in toasting quality, only in appearance and excessive features. Traditional exposed-element designs yield uneven toasting results and pose safety risks. Flashy styling and marketing raise expectations but do not deliver accordingly, leading to returns, early disposal, and wasted resources. The redesign, an induction-heating toaster, responds to user lifestyles and design consequences. It improves toasting quality, uses recyclable materials, and offers a usage-based service model for better aftercare. The goal: a longer-lasting product that creates less waste and retains value even after its user moves on.</p>
+
+    <img src="img/p5_2.jpg" class="photos">
+<p class="description">Its aluminium outer shell, a widely recyclable material, is finished in a warm, muted palette that complements home interiors and offers timeless visual appeal.</p>
+<img src="img/p5_3.jpg" class="photos">
+<p class="description">Using induction heating, it presses two plates together to toast the bread, ensuring even, consistent heat distribution with minimal heat loss. Precise temperature control optimises energy efficiency.</p>
+<img src="img/p5_4.jpg" class="photos">
+<img src="img/p5_5.jpg" class="photos">
+<img src="img/p5_6.jpg" class="photos">
+  
+
+</div>
+
+
+
+
+
+<script>
+
+   
+    var banner = document.getElementById('banner');
+    var close = document.getElementById('close');
+    var feature = document.getElementById('featured');
+    var ma = document.getElementById('ma');
+    var bfa = document.getElementById('bfa');
+    var about = document.getElementById('about');
+
+ banner.addEventListener('mouseenter', () => {
+            banner.style.height = `24vh`;
+            close.style.transform = 'rotate(90deg)';
+             feature.style.display = 'block'; 
+            ma.style.display = 'block';    
+    bfa.style.display = 'block';
+    about.style.display = 'block';
+ 
+  })
+
+   banner.addEventListener('mouseleave', () => {
+            banner.style.height = `12vh`;
+            close.style.transform = 'rotate(0deg)';
+            feature.style.display = 'none';    
+            ma.style.display = 'none';      
+    bfa.style.display = 'none';
+    about.style.display = 'none';
+
+  })
+
+//resize
+
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+var home = document.getElementById('home');
+var l1 = document.getElementById('l1');
+var description = document.querySelectorAll('.description');
+var photos = document.querySelectorAll('.photos');
+
+
+function setProjectWidth() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    console.log("resize");
+    
+    if (width < height) {
+        photos.forEach(photo => {
+            photo.style.marginBottom = '7vh';
+        });
+          description.forEach(description => {
+            description.style.width = '85vw';
+        });
+        l1.style.width = '85vw';
+        home.style.removeProperty('width');
+        close.style.marginLeft = 'auto';
+    } else {
+        photos.forEach(photo => {
+            photo.style.marginBottom = '11vh';
+             
+        });
+        description.forEach(description => {
+            description.style.width = '28vw';
+        });
+        l1.style.width = '100vw';
+        home.style.width = '7.5vw';   
+        close.style.marginLeft = '85vw';
+    }
+}
+
+
+setProjectWidth();
+
+
+window.addEventListener('resize', setProjectWidth);
+
+
+
+</script>
+
+</body>
+</html> 
+
+ 
