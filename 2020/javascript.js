@@ -13,6 +13,8 @@
 
   var pc = document.querySelectorAll('.PC')[0];
 
+  var d = document.querySelectorAll('.D');
+
 //banner
 var l1 = document.getElementById('l1');
 
@@ -39,9 +41,11 @@ nav2.forEach(nav2 => {
             nav2.style.marginLeft = '6vw';
         });
 
-		 category.style.marginTop = '5vh';
 
 
+     d.forEach(x => {
+      x.style.width = '60vw';
+        });
 
 
 
@@ -63,9 +67,10 @@ nav2.forEach(nav2 => {
             nav2.style.marginLeft = '6vw';
         });
 
-		category.style.marginTop = '0vh';
 
-
+d.forEach(x => {
+      x.style.width = '30vw';
+        });
 
 
     }
@@ -88,19 +93,11 @@ window.addEventListener('resize', setProjectWidth);
  banner.addEventListener('mouseenter', () => {
             banner.style.height = `8vh`;
             close.style.transform = 'rotate(90deg)';
-                    feature.style.display = 'block';   
-            ma.style.display = 'block';    
-    bfa.style.display = 'block';
-    about.style.display = 'block';
  
   })
 
    banner.addEventListener('mouseleave', () => {
             banner.style.height = `6vh`;
             close.style.transform = 'rotate(0deg)';
-            feature.style.display = 'block';    
-            ma.style.display = 'block';      
-    bfa.style.display = 'block';
-    about.style.display = 'block';
 
   })
