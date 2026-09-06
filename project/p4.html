@@ -156,6 +156,15 @@ margin-bottom: 11vh;
 
 
 
+h1{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 1.1rem;
+
+}
+
+
+
     </style>
     
 <body>
@@ -192,11 +201,11 @@ margin-bottom: 11vh;
       <img src="img/p4_1.jpg" class="photos">
 
   <div id="l2">
-    <h3 id="title">Dressing Lab</h3>
-    <p id="subtitle">Automatic dressing station &ensp; &ensp; &ensp;  <span class="date">2023.06</span></p>
-    <p class="description">Many smart wardrobes prioritize appearance or garment care, with few optimize storage efficiency or help users dress better. The target audience, commuters, prefer a storage system that efficiently organize a variety of clothing and ultimately assist in creating better outfits. <br><br>
+    <h1 id="title">Dressing Lab</h1>
+    <h2 id="subtitle">Automatic dressing station &ensp; &ensp; &ensp;  <span class="date">2023.06</span></h2>
+    <h2 class="description">Many smart wardrobes prioritize appearance or garment care, with few optimize storage efficiency or help users dress better. The target audience, commuters, prefer a storage system that efficiently organize a variety of clothing and ultimately assist in creating better outfits. <br><br>
 
-Dressing Lab is an automated wardrobe that seamlessly integrates clothing storage and styling. It features a mechanical system comprising a rolling section, a hanging section, and accessory units, all controlled via an organizational console to store various types of clothing. Additionally, it includes an interactive mirror that manages and styles outfits according to different needs.</p>
+Dressing Lab is an automated wardrobe that seamlessly integrates clothing storage and styling. It features a mechanical system comprising a rolling section, a hanging section, and accessory units, all controlled via an organizational console to store various types of clothing. Additionally, it includes an interactive mirror that manages and styles outfits according to different needs.</h2>
 
 <img src="img/p4_2.jpg" class="photos">
 <img src="img/p4_3.jpg" class="photos">
@@ -249,6 +258,10 @@ var l1 = document.getElementById('l1');
 var description = document.querySelectorAll('.description');
 var photos = document.querySelectorAll('.photos');
 
+var h1 = document.querySelectorAll('h1');
+var h2 = document.querySelectorAll('h2');
+
+
 
 function setProjectWidth() {
     const width = window.innerWidth;
@@ -265,6 +278,20 @@ function setProjectWidth() {
         l1.style.width = '85vw';
         home.style.removeProperty('width');
         close.style.marginLeft = 'auto';
+
+
+          h1.forEach(x => {
+            x.style.fontSize = '3rem';
+        });
+
+        h2.forEach(x => {
+            x.style.fontSize = '2rem';
+        });
+
+
+
+
+
     } else {
         photos.forEach(photo => {
             photo.style.marginBottom = '11vh';
@@ -276,6 +303,19 @@ function setProjectWidth() {
         l1.style.width = '100vw';
         home.style.width = '7.5vw';   
         close.style.marginLeft = '85vw';
+
+ h1.forEach(x => {
+            x.style.fontSize = '1.1rem';
+        });
+
+         h2.forEach(x => {
+            x.style.fontSize = '0.75rem';
+        });
+
+
+
+
+
     }
 }
 

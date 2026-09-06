@@ -155,6 +155,15 @@ margin-bottom: 11vh;
 }
 
 
+h1{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 1.1rem;
+
+}
+
+
+
 
     </style>
     
@@ -192,15 +201,15 @@ margin-bottom: 11vh;
       <img src="img/p6_1.jpg" class="photos">
 
   <div id="l2">
-    <h3 id="title">Museum Audio Guide System</h3>
-    <p id="subtitle">A Hand-free Museum Experience &ensp; &ensp; &ensp;  <span class="date">2018.10</span></p>
-    <p class="description">Audio guides are essential for informative and self-paced museum visits, yet take-up rate remains low. Current systems are bulky, confusing to navigate, and confine users with lanyards and wired earphones. The design reimagines an intuitive and immersive experience: a wireless neck speaker and interactive app with customisable tours, freeing users from heavy devices while letting them choose their own schedule and content.</p>
+    <h1 id="title">Museum Audio Guide System</h1>
+    <h2 id="subtitle">A Hand-free Museum Experience &ensp; &ensp; &ensp;  <span class="date">2018.10</span></h2>
+    <h2 class="description">Audio guides are essential for informative and self-paced museum visits, yet take-up rate remains low. Current systems are bulky, confusing to navigate, and confine users with lanyards and wired earphones. The design reimagines an intuitive and immersive experience: a wireless neck speaker and interactive app with customisable tours, freeing users from heavy devices while letting them choose their own schedule and content.</h2>
 
     <img src="img/p6_2.jpg" class="photos">
-<p class="description">The audio speaker takes an over-the-neck form with retractable cords, and its smooth surfaces are easy to sanitise, all while remaining lightweight and effortless to put on. Embedded Bluetooth transmitters are automatically triggered by the museum&apos;s curation system, helping users navigate the space.</p>
+<h2 class="description">The audio speaker takes an over-the-neck form with retractable cords, and its smooth surfaces are easy to sanitise, all while remaining lightweight and effortless to put on. Embedded Bluetooth transmitters are automatically triggered by the museum&apos;s curation system, helping users navigate the space.</h2>
 <img src="img/p6_3.jpg" class="photos">
 <img src="img/p6_4.jpg" class="photos">
-<p class="description">Tours are labelled by attributes such as time, theme, and floor, allowing visitors to choose based on their motivation. Real-time location tracking, anchor points, and synchronised audio make museum navigation smoother and more intuitive.</p>
+<h2 class="description">Tours are labelled by attributes such as time, theme, and floor, allowing visitors to choose based on their motivation. Real-time location tracking, anchor points, and synchronised audio make museum navigation smoother and more intuitive.</h2>
 
 <img src="img/p6_5.jpg" class="photos">
   
@@ -251,6 +260,10 @@ var l1 = document.getElementById('l1');
 var description = document.querySelectorAll('.description');
 var photos = document.querySelectorAll('.photos');
 
+var h1 = document.querySelectorAll('h1');
+var h2 = document.querySelectorAll('h2');
+
+
 
 function setProjectWidth() {
     const width = window.innerWidth;
@@ -267,6 +280,19 @@ function setProjectWidth() {
         l1.style.width = '85vw';
         home.style.removeProperty('width');
         close.style.marginLeft = 'auto';
+
+  h1.forEach(x => {
+            x.style.fontSize = '3rem';
+        });
+
+        h2.forEach(x => {
+            x.style.fontSize = '2rem';
+        });
+
+
+
+
+
     } else {
         photos.forEach(photo => {
             photo.style.marginBottom = '11vh';
@@ -278,6 +304,20 @@ function setProjectWidth() {
         l1.style.width = '100vw';
         home.style.width = '7.5vw';   
         close.style.marginLeft = '85vw';
+
+
+ h1.forEach(x => {
+            x.style.fontSize = '1.1rem';
+        });
+
+         h2.forEach(x => {
+            x.style.fontSize = '0.75rem';
+        });
+
+
+
+
+
     }
 }
 

@@ -155,6 +155,13 @@ margin-bottom: 11vh;
 }
 
 
+h1{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 1.1rem;
+
+}
+
 
     </style>
     
@@ -192,19 +199,19 @@ margin-bottom: 11vh;
       <img src="img/p2_1.jpg" class="photos">
 
   <div id="l2">
-    <h3 id="title">FLVW</h3>
-    <p id="subtitle">Foldable city personal transporter &ensp; &ensp; &ensp;  <span class="date">2025.04</span></p>
-    <p class="description">Many people travel using different modes of transport in cities, but public transports do not cover all kinds of urban terrains, and the link between them is also missing. This project considers a foldable personal transporter that can be easily carried around while safely navigating the urban landscape. To encourage sustainable transportation, it can be used manually or with an attachable battery.</p>
+    <h1 id="title">FLVW</h1>
+    <h2 id="subtitle">Foldable city personal transporter &ensp; &ensp; &ensp;  <span class="date">2025.04</span></h2>
+    <h2 class="description">Many people travel using different modes of transport in cities, but public transports do not cover all kinds of urban terrains, and the link between them is also missing. This project considers a foldable personal transporter that can be easily carried around while safely navigating the urban landscape. To encourage sustainable transportation, it can be used manually or with an attachable battery.</h2>
 
   </div>
 
 <img src="img/p2_2.jpg" class="photos">
 <img src="img/p2_3.jpg" class="photos">
 
-<p class="description">FLVW can be used manually or with an attachable battery. Features including shock absorber, wide tyres, and disc brake enhances its safety on bumpy roads and rainy weather. Retroreflective paint is applied to increase visibility in the dark.</p>
+<h2 class="description">FLVW can be used manually or with an attachable battery. Features including shock absorber, wide tyres, and disc brake enhances its safety on bumpy roads and rainy weather. Retroreflective paint is applied to increase visibility in the dark.</h2>
 
 <img src="img/p2_4.jpg" class="photos">
-<p class="description">Its panels can be folded and turned into a crossbody that is sleek and modern to fit the urban outfit scene. Its portability facilitates urban mobility by enabling users to use and carry when navigating between city scenes and public transportations. </p>
+<h2 class="description">Its panels can be folded and turned into a crossbody that is sleek and modern to fit the urban outfit scene. Its portability facilitates urban mobility by enabling users to use and carry when navigating between city scenes and public transportations. </h2>
 
 <img src="img/p2_5.jpg" class="photos">
   
@@ -255,6 +262,10 @@ var l1 = document.getElementById('l1');
 var description = document.querySelectorAll('.description');
 var photos = document.querySelectorAll('.photos');
 
+var h1 = document.querySelectorAll('h1');
+var h2 = document.querySelectorAll('h2');
+
+
 
 function setProjectWidth() {
     const width = window.innerWidth;
@@ -271,6 +282,17 @@ function setProjectWidth() {
         l1.style.width = '85vw';
         home.style.removeProperty('width');
         close.style.marginLeft = 'auto';
+
+  h1.forEach(x => {
+            x.style.fontSize = '3rem';
+        });
+
+        h2.forEach(x => {
+            x.style.fontSize = '2rem';
+        });
+
+
+
     } else {
         photos.forEach(photo => {
             photo.style.marginBottom = '11vh';
@@ -282,6 +304,19 @@ function setProjectWidth() {
         l1.style.width = '100vw';
         home.style.width = '7.5vw';   
         close.style.marginLeft = '85vw';
+
+         h1.forEach(x => {
+            x.style.fontSize = '1.1rem';
+        });
+
+         h2.forEach(x => {
+            x.style.fontSize = '0.75rem';
+        });
+
+
+
+
+
     }
 }
 

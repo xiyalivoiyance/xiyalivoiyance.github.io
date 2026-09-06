@@ -156,6 +156,15 @@ margin-bottom: 11vh;
 
 
 
+h1{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 1.1rem;
+
+}
+
+
+
     </style>
     
 <body>
@@ -192,14 +201,14 @@ margin-bottom: 11vh;
       <img src="img/p5_1.jpg" class="photos">
 
   <div id="l2">
-    <h3 id="title">Sustainable Toaster</h3>
-    <p id="subtitle">A quality toasting service &ensp; &ensp; &ensp;  <span class="date">2018.12</span></p>
-    <p class="description">Today&apos; toasters hardly differ in toasting quality, only in appearance and excessive features. Traditional exposed-element designs yield uneven toasting results and pose safety risks. Flashy styling and marketing raise expectations but do not deliver accordingly, leading to returns, early disposal, and wasted resources. The redesign, an induction-heating toaster, responds to user lifestyles and design consequences. It improves toasting quality, uses recyclable materials, and offers a usage-based service model for better aftercare. The goal: a longer-lasting product that creates less waste and retains value even after its user moves on.</p>
+    <h1 id="title">Sustainable Toaster</h1>
+    <h2 id="subtitle">A quality toasting service &ensp; &ensp; &ensp;  <span class="date">2018.12</span></h2>
+    <h2 class="description">Today&apos; toasters hardly differ in toasting quality, only in appearance and excessive features. Traditional exposed-element designs yield uneven toasting results and pose safety risks. Flashy styling and marketing raise expectations but do not deliver accordingly, leading to returns, early disposal, and wasted resources. The redesign, an induction-heating toaster, responds to user lifestyles and design consequences. It improves toasting quality, uses recyclable materials, and offers a usage-based service model for better aftercare. The goal: a longer-lasting product that creates less waste and retains value even after its user moves on.</h2>
 
     <img src="img/p5_2.jpg" class="photos">
-<p class="description">Its aluminium outer shell, a widely recyclable material, is finished in a warm, muted palette that complements home interiors and offers timeless visual appeal.</p>
+<h2 class="description">Its aluminium outer shell, a widely recyclable material, is finished in a warm, muted palette that complements home interiors and offers timeless visual appeal.</h2>
 <img src="img/p5_3.jpg" class="photos">
-<p class="description">Using induction heating, it presses two plates together to toast the bread, ensuring even, consistent heat distribution with minimal heat loss. Precise temperature control optimises energy efficiency.</p>
+<h2 class="description">Using induction heating, it presses two plates together to toast the bread, ensuring even, consistent heat distribution with minimal heat loss. Precise temperature control optimises energy efficiency.</h2>
 <img src="img/p5_4.jpg" class="photos">
 <img src="img/p5_5.jpg" class="photos">
 <img src="img/p5_6.jpg" class="photos">
@@ -251,6 +260,9 @@ var l1 = document.getElementById('l1');
 var description = document.querySelectorAll('.description');
 var photos = document.querySelectorAll('.photos');
 
+var h1 = document.querySelectorAll('h1');
+var h2 = document.querySelectorAll('h2');
+
 
 function setProjectWidth() {
     const width = window.innerWidth;
@@ -267,6 +279,19 @@ function setProjectWidth() {
         l1.style.width = '85vw';
         home.style.removeProperty('width');
         close.style.marginLeft = 'auto';
+
+  h1.forEach(x => {
+            x.style.fontSize = '3rem';
+        });
+
+        h2.forEach(x => {
+            x.style.fontSize = '2rem';
+        });
+
+
+
+
+
     } else {
         photos.forEach(photo => {
             photo.style.marginBottom = '11vh';
@@ -278,6 +303,19 @@ function setProjectWidth() {
         l1.style.width = '100vw';
         home.style.width = '7.5vw';   
         close.style.marginLeft = '85vw';
+
+ h1.forEach(x => {
+            x.style.fontSize = '1.1rem';
+        });
+
+         h2.forEach(x => {
+            x.style.fontSize = '0.75rem';
+        });
+
+
+
+
+
     }
 }
 
