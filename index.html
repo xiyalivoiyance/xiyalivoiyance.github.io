@@ -77,6 +77,8 @@ margin-top: 5vh;
   margin-left: 85vw;
 }
 
+
+
 h2{
 font-family: 'Jost', sans-serif;
 font-weight: 450; 
@@ -130,7 +132,17 @@ display: flex;
   width:42.3vw;
 }
 
+a .project {
+    display: block;         
+    width: 100%;    
+}
 
+h1{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 1.5rem;
+
+}
 
     </style>
     
@@ -219,6 +231,9 @@ var l1 = document.getElementById('l1');
 var gallery = document.getElementById('gallery');
 // var box1 = document.getElementById('box1');
 
+var h1 = document.querySelectorAll('h1');
+var h2 = document.querySelectorAll('h2');
+
 
 function setProjectWidth() {
     const width = window.innerWidth;
@@ -235,6 +250,17 @@ function setProjectWidth() {
         home.style.removeProperty('width');
         close.style.marginLeft = 'auto';
         gallery.style.gap = '5vh';
+
+
+         h1.forEach(x => {
+            x.style.fontSize = '1.5rem';
+        });
+
+        h2.forEach(x => {
+            x.style.fontSize = '1rem';
+        });
+
+
     } else {
         galleryWidth.forEach(project => {
             project.style.width = '42.3vw';
@@ -245,6 +271,17 @@ function setProjectWidth() {
         home.style.width = '7.5vw';   
         close.style.marginLeft = '85vw';
       gallery.style.gap = '.5vh';
+
+  h1.forEach(x => {
+            x.style.fontSize = '1.5rem';
+        });
+
+         h2.forEach(x => {
+            x.style.fontSize = '0.75rem';
+        });
+
+
+
     }
 }
 
