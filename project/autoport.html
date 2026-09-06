@@ -46,87 +46,12 @@ z-index: 1;
     }
 
 
-
-    		#banner{
-background-color: rgba(255, 255, 255, 0.1);  /* 半透明白色 */
-    backdrop-filter: blur(10px);  
-	-webkit-backdrop-filter: blur(10px); 
-position: fixed; 
-width: 100vw;
-height:7.3vh;
-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.015);
-display: flex;
-flex-direction: column;
-align-items: center;
-z-index: 2;
-
-}
-
-#l1{
-width: 100vw;
-height:6vh;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-justify-content: center;
-}
-
-#home{
-font-family: 'Jost', sans-serif;
-font-weight: 560; 
-font-size: 1.1rem;
-/* width:7.5vw; */
-text-align: right;
-margin-top: 3vh;
-visibility: hidden;
-margin-right: 81vw;
-}
-
-
-#close{
-  height: 0.4vh;
-  margin-top: 3vh;
-  /* margin-right: 7.5vw; */
-}
-
-
-
-
-
-
-
-
     </style>
     
 <body>
-
-
-
-  
     
    <a href="../index.html"> <img src="img/cr3.png"  id="ring"> </a> 
-
-
-
-<!-- banner -->
-
-    <a href="../../index.html">
-		
-		<div id="banner">
-  <div id="l1">
-    <h6 href="../index.html" id="home">XIYA LI</h6>
-
- <img src="close.svg"  id="close">
-
-  </div>
-  </div>
-</a>
-
-
-   
 <img src="img/autoport.jpg"  id="content">
-
-
     
      <div id="vframe"><video controls id="video">
   <source src="autoport.mp4" type="video/mp4" >
@@ -168,24 +93,6 @@ ring.addEventListener('mouseenter', () => {
     }
 });
 
-
-//banner
-
-
-    var banner = document.getElementById('banner');
-    var close = document.getElementById('close');
-
- banner.addEventListener('mouseenter', () => {
-            banner.style.height = `8vh`;
-            close.style.transform = 'rotate(90deg)';
- 
-  })
-
-   banner.addEventListener('mouseleave', () => {
-            banner.style.height = `7.3vh`;
-            close.style.transform = 'rotate(0deg)';
-
-  })
 
  
 </script>
