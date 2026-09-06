@@ -23,6 +23,8 @@ a:visited {
 
 .PC{
 	visibility: visible;
+		display: flex;
+	flex-direction: column;
 }
 
 
@@ -88,32 +90,32 @@ p{
 
 #project1{
 	margin-top: 91px;
-	width: 65%;
-	margin-left: 20%;
+	width: 65vw;
+	margin-left: 30%;
 	height: auto;
 	vertical-align: top;
 }
 
 #project2{
 	margin-top: 10%;
-	width: 65%;
-	margin-left: 20%;
+	width: 65vw;
+	margin-left: 30%;
 	height: auto;
 	vertical-align: top;
 }
 
 #project3{
 	margin-top: 10%;
-	width: 65%;
-	margin-left: 20%;
+	width: 65vw;
+	margin-left: 30%;
 	height: auto;
 	vertical-align: top;
 }
 
 #project4{
 	margin-top: 10%;
-	width: 65%;
-	margin-left: 20%;
+	width: 65vw;
+	margin-left: 30%;
 	height: auto;
 	vertical-align: top;
 }
@@ -173,18 +175,18 @@ p{
 
 .Nav {
 	position: fixed;
-	left: 60px;
-	top: 91px;
+	margin-left: 6vw;
+	margin-top: 8vh;
 }
 .Nav1 {
 	position: fixed;
-	left: 60px;
-	top: 140px;
+	margin-left: 6vw;
+	margin-top: 13vh;
 }
 .Nav2 {
 	position: fixed;
-	left: 60px;
-	top: 160px;
+	margin-left: 6vw;
+	margin-top: 18vh;
 }
 .Nav3 {
 	position: fixed;
@@ -198,9 +200,6 @@ p{
 .D1 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	left: 13%;
-	top: 40%;
 }
 
 /*
@@ -211,133 +210,90 @@ p{
 .D2 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	top: 40%;
-	left: 43%;
 }
 .D3 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	top: 40%;
-	left: 73%;
 }
 .D4 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	top: 40%;
-	left: 103%;
 }
 
 .D5 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	top: 40%;
-	left: 133%;
 }
 
 .D6 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	top: 40%;
-	left: 163%;
 }
 
 .D7 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	top: 40%;
-	left: 193%;
 }
 
 .D8 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	top: 40%;
-	left: 223%;
 }
 
 .D9 {
 	width: 400px;
 	height: 400px;
-	position: absolute;
-	top: 40%;
-	left: 253%;
 	
 }
 
 .D1Title {
-	position: absolute;
-	left: 13%;
-	top: 90%;
+	
 	width: 400px;
 	margin-top: 1%;
 }
 .D2Title {
-	position: absolute;
-	left: 43%;
-	top: 90%;
 	width: 400px;
 	margin-top: 1%;
 }
 
 .D3Title {
-	position: absolute;
-	left: 73%;
-	top: 90%;
+
 	width: 400px;
 	margin-top: 1%;
 }
 
 .D4Title {
-	position: absolute;
-	left: 103%;
-	top: 90%;
+
 	width: 400px;
 	margin-top: 1%;
 }
 
 .D5Title {
-	position: absolute;
-	left: 133%;
-	top: 90%;
+
 	width: 400px;
 	margin-top: 1%;
 }
 
 .D6Title {
-	position: absolute;
-	left: 163%;
-	top: 90%;
+
 	width: 400px;
 	margin-top: 1%;
 }
 
 .D7Title {
-	position: absolute;
-	left: 193%;
-	top: 90%;
+
 	width: 400px;
 	margin-top: 1%;
 }
 
 .D8Title {
-	position: absolute;
-	left: 223%;
-	top: 90%;
+
 	width: 400px;
 	margin-top: 1%;
 }
 
 .D9Title {
-	position: absolute;
-	left: 253%;
-	top: 90%;
+
 	width: 400px;
 	margin-top: 1%;
 }
@@ -357,9 +313,8 @@ p{
 }
 
 #note{
-	position: fixed;
-	margin-left: 13%;
-	margin-top: 18%;
+	/* position: fixed; */
+	margin-left: 60px;
 }
 
 .Introduction{
@@ -370,7 +325,7 @@ p{
 
 .FF{
 /*	position: absolute;*/
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-family: Arial, Helvetica, sans-serif;
 	top: 40%;
 	margin-left: 15%;
 	color: #308483;
@@ -717,6 +672,8 @@ p1{
 	#mbHighlights{
 		margin-top: 0;
 	}
+
+
 	
 	
 }
@@ -724,4 +681,58 @@ p1{
 
 
 
+	#slideshow{
+		margin-top: 40vh;
+	display: flex;
+	flex-direction: row;
+	gap:5vw;
+	}
+	
+
+	/* a {
+            text-decoration: none;
+            color: inherit;
+        } */
+
+
+		#banner{
+background-color: rgba(255, 255, 255, 0.3);  /* 半透明白色 */
+    backdrop-filter: blur(10px);  
+	-webkit-backdrop-filter: blur(10px); 
+position: fixed; 
+width: 100vw;
+height:6vh;
+box-shadow: 0 4px 7px rgba(0, 0, 0, 0.015);
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+#l1{
+width: 100vw;
+height:10vh;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+}
+
+#home{
+font-family: 'Jost', sans-serif;
+font-weight: 560; 
+font-size: 1.1rem;
+/* width:7.5vw; */
+text-align: right;
+margin-top: 5vh;
+visibility: hidden;
+margin-right: 81vw;
+}
+
+
+#close{
+  height: 0.4vh;
+  margin-top: 3vh;
+  /* margin-right: 7.5vw; */
+}
 

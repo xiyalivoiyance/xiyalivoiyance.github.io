@@ -1,467 +1,342 @@
 <!DOCTYPE html>
 
 <html>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
 
-
-html{
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-}
-
-body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #DDDEDC;
+  box-sizing: border-box;
 }
 
 
-
-#gradient{
- background: linear-gradient(45deg, rgba(247,203,214,0.8), rgba(247,203,214,0.0)70%), 
-linear-gradient(90deg, rgba(219,225,251,0.8), rgba(219,225,251,0.0)70%), 
-linear-gradient(135deg, rgba(204,246,250,0.8), rgba(204,246,250,0.0)70%), 
-linear-gradient(180deg, rgba(243,208,250,0.8), rgba(243,208,250,0.0)70%), 
-linear-gradient(225deg, rgba(186,248,203,0.8), rgba(186,248,203,0.0)70%),  
-linear-gradient(270deg, rgba(205,246,170,0.8), rgba(205,246,170,0.0)70%), 
-linear-gradient(315deg, rgba(244,206,147,0.8), rgba(244,206,147,0.0)70%);
-
-
-top: 0;
-  left: 0;
-  width: 100vw;        
-  height: 100vh; 
-  position: absolute;
- border: none; 
- position:absolute;
-}
-
-#base{
-  position: absolute;
-   width: 100vw;
-  height: 100vh;
+body {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-color: white;
+  flex-direction: column;
+  align-items: center; 
 }
 
 
-#button2{
-      top:82.3%;
-       left: 43.3%;
-       width: 14%;
-       position:absolute;
-    }
-
-    #ring{
-       /* margin-top: 705px;
-       margin-left: 685px;
-       width: 100px; */
-
-          top:82.75%;
-       left: 46.6%;
-       width: 7%;
-       position:absolute;
-       transition: transform 0.3s ease;
-    }
-
-    img{
-        position: absolute;
-    }
-
-    a {
-  /* text-decoration: none;  */
-  color: inherit; 
-}
-
-    #xiya{
-      font: medium "Jost";
-      color: white;
-      letter-spacing: .5vw;
-       left: 9.5vw;
-      top: 28.5vw;
-      width: 20vw;
-      height: auto;
-      position:absolute;
-    }
-
-     #xiya a {font-size: 1.3vw;}
-
- #info{
-      font: medium "Jost";
-      color: white;
-      left: 2.9vw;
-      top: 27vw;
-      width: 20vw;
-      height: auto;
-      position:absolute;
-      text-align: center;
-       line-height: 2vw;
-      
-    }
-
- #info a {
-  font-size: .9vw;
- 
- }
-
-
-
-            #scrollFrame{
-      width: 40%;
-      height:10%;
-      left: 61%;
-      top: 54.5%;
-      overflow:hidden;
-      position:absolute;
-    }
-
-       #past{
-      font: medium "Jost";
-      color: white;
-      width: 80%;
-      line-height: 1.5;
-
-      transform: translateY(50px);
-      /* 50 -> -200 */
-
-    }
-
-    #past a {font-size:1vw;}
-
-    #scrollBox{
-      /* width: 550px;
-      height:250px;
-      margin-left: 850px;
-      margin-top: 380px; */
-
-         width: 40%;
-      height:10%;
-      left: 61%;
-      top: 54.5%;
-
-
-      position:absolute;
-    }
-
-
-
-  #headshot {
-          /* margin-top: 265px;
-            margin-left: 368px; */
-        
-
-        /* top:31.6%;
-       left: 24.8%;
-       width: 31%;
-      height: 53%; */
-
-      top:18.3vw;
-      left: 25.3vw;
-      width: 30vw;
-      height: 30vw;
-
-      border-radius: 300%; 
-            object-fit: cover;          /* fills the box and crops excess */
-            object-position: center;
-             position:absolute;
-            
+a {
+            text-decoration: none;
+            color: inherit;
         }
 
-    #gauge {
-  width: 100vw;    
-  height: auto;      
-  display: block; 
-  position: absolute;
-    }
+#banner{
+background-color: white;
+position: fixed; 
+width: 100vw;
+height:12vh;
+box-shadow: 0 4px 7px rgba(0, 0, 0, 0.02);
+display: flex;
+flex-direction: column;
+align-items: center;
 
-    #popup {
-  visibility: hidden; 
-  position:absolute;
-  background-color: #DDDEDC;
-  width: 100%;
-  height: 100%;
 }
 
-#message {
-   font: medium "Jost";
-      color: white;
- margin-top: 50%;
-  margin-left: 30%;
-      position:absolute;
-      text-align: center;
-      font-size: 30px;
+#l1{
+width: 100vw;
+height:10vh;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+}
+
+#home{
+font-family: 'Jost', sans-serif;
+font-weight: 560; 
+font-size: 1.1rem;
+/* width:7.5vw; */
+text-align: right;
+margin-top: 5vh;
+}
+
+#box1{
+width: 85vw;                     
+height: 0.5vh;
+margin-top: 5vh;
+/* display: block; */
+}
+
+#close{
+  height: 0.4vh;
+  margin-top: 6.4vh;
+  margin-left: 85vw;
+}
+
+h2{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 0.75rem;
+
+}
+
+#featured{
+width:85vw;
+margin-top: .2vh;
+text-align: right;
+display: none; 
+}
+
+#ma{
+width:85vw;
+margin-top:.2vh;
+text-align: right;
+display: none; 
+}
+
+#bfa{
+width:85vw;
+margin-top: .2vh;
+text-align: right;
+display: none; 
+}
+
+#about{
+width:85vw;
+margin-top:1vh;
+margin-top:1vh;
+text-align: right;
+display: none; 
+}
+
+
+#content{
+background-color: white;
+margin-top: 20vh; 
+width: 85vw;
+min-height: 66vh;   
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+gap: 5vh;
+
+}
+
+#l2{
+
+}
+
+#l3{
+width: 40vw;
+}
+
+#l4{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-left: 5vw;
+gap: 1vh;
+
+}
+
+#ins{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+#lkn{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+#email{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+
+#id{
+width: 20vw;
+}
+
+.icon{
+  width: 1vw;
+  margin-right:.5vw;
 }
 
     </style>
     
 <body>
 
-<div id="gradient"></div>
+<div id="banner">
+  <div id="l1">
+    <a href="index.html" id="home-link">
+    <h1 id="home">XIYA LI</h1>
+</a>
 
-  <div id="base">
-
-
-  <img src="img/gauge.png" id="gauge">
-
-<img src="img/XIYAS.gif" width="500px" id="headshot">
-    <a href="index.html"> <img src="img/button2.png"  id="button2"> </a>
-    <a href="index.html"> <img src="img/cone&rod.png"  id="ring"> </a>
-
-<span id="xiya"><a>XIYA LI</a></span> 
-    <h3 id="info"><br> <br> 
-      <a href="cv.pdf">CV</a> <br> 
-      <a href="2020/index.html">2016 - 2020</a> <br> 
-      <a href="mailto:xiyalixiya@outlook.com">xiyalixiya@outlook.com</a> 
-      <br> <a> @irngrill </a>
-    </h3>
-    
-   
-<div id="scrollFrame">
-        <div id="past">
-<a>Hi! I am an industrial designer. <br>
-My design focuses on ergonomics and positive emotion by appropriate forms and colours. I am passionate about different approaches to sustainability in design, such as modularity, repairability, and performance structures. <br> <br>   
-Industrial design(BFA) University of Illinois at Urbana-Champaign  <br>   <br>   
-Design products(MA) Royal College of Art </div></a>
-</div>    
-
-<div id="scrollBox"></div>
-
-
-
+ <img src="img/close.svg"  id="close">
   </div>
+  
+  <a href="index.html" >
+   <h2 id="featured">Selected works</h2>
+</a>
 
+    <a href="2025/index.html" >
+   <h2 id="ma">2023 - 2025</h2>
+</a>
 
+     <a href="2020/index.html" >
+  <h2 id="bfa">2016 - 2020</h2>
+</a>
+ 
+     <a href="about.html" >
+    <h2 id="about">ABOUT</h2>
+</a>
 
- <div id="popup">
-  <div id="message">
-    <span style="font-size: 20px;"> PLEASE ROTATE -> </span> <strong> LANDSCAPE </strong> <span style="font-size: 10px;"> MODE </span> 
-  </div>
 </div>
+
+<div id="content">
+
+  <div id="l2">
+      <img src="img/id.jpg"id="id">
+  </div>
+
+  <div id="l3">
+    <h2 id="intro">Hi! I&apos;m an industrial designer. My practice centers on ergonomic function and emotional resonance, achieved through deliberate form and color choices. I am passionate about sustainability-driven design approaches, including modular systems, repairability, and structural efficiency. I hold a BFA in Industrial Design from the University of Illinois at Urbana-Champaign and an MA in Design Products from the Royal College of Art.</h2>
+
+  </div>
+
+  <div id="l4">
+    <div id="ins">
+      <img src="img/ins.png" class="icon">
+    <h2>irngrill</h2>
+  </div>
+  <div id="lkn">
+      <img src="img/linkedin.png" class="icon">
+    <a href="www.linkedin.com/in/xiya-li">
+    <h2>Xiya Li</h2>
+</a>
+  </div>
+<div id="email">
+      <img src="img/email.png" class="icon">
+    <h2>xiyalixiya@outlook.com</h2>
+  </div>
+    
+  </div>
+
+
+  
+
+</div>
+
+
+
 
 
 <script>
 
-var ring = document.getElementById('ring');
-    var rotateRing = 0;
-    var deg = 0;
-    var button = document.getElementById('button2');
+   
+    // var bgX = document.getElementById('background').style.marginLeft;
+    // var bgY = document.getElementById('background').style.marginTop;
+    // var bgX = 0;
+    // var bgY = 0;
+    var banner = document.getElementById('banner');
+    var close = document.getElementById('close');
+    var feature = document.getElementById('featured');
+    var ma = document.getElementById('ma');
+    var bfa = document.getElementById('bfa');
+    var about = document.getElementById('about');
 
-
-var gauge = document.getElementById('gauge');
-gauge.style.width = window.innerWidth + 'px';
-
-var gradient = document.getElementById('gradient');
-var colors = ['rgba(247,203,214,0.8)', 'rgba(219,225,251,0.8)', 'rgba(204,246,250,0.8)', 'rgba(243,208,250,0.8)', 'rgba(186,248,203,0.8)', 'rgba(205,246,170,0.8)', 'rgba(244,206,147,0.8)'];
-var colorsa = ['rgba(247,203,214,0.0)', 'rgba(219,225,251,0.0)', 'rgba(204,246,250,0.0)', 'rgba(243,208,250,0.0)', 'rgba(186,248,203,0.0)', 'rgba(205,246,170,0.0)', 'rgba(244,206,147,0.0)'];
-
-
-var scrollBox = document.getElementById('scrollBox');
-var past = document.getElementById('past');
-var scrollFrame = document.getElementById('scrollFrame');
-var mY1 = 0;
-var mY2 = 0;
-var mY = 0;
-var hover = false;
-var speed = .5;
-
-
-function scroll(){
-    var matrix = window.getComputedStyle(past).transform;
-  var value = matrix.match(/matrix.*\((.+)\)/)[1].split(', ');
-  var cY = parseFloat(value[5]);
-
-
-if(hover && (mY != 1) && (mY != -1)){
-
-  if(mY > 0){
-    //scroll down
-
-      if(cY <= 40){
-   cY += mY*10;
-  } else {
-    cY = -200;
-  }
-
-  
-
-  } else {
-     //scroll up
-    console.log(cY);
-  if(cY >= -199){
-     cY -= mY*-10;
-  } else {
-    cY = 50;
-  }
-
-  
-
-  }
-
-
-} else{
-  if(cY >= -199){
-     cY -= speed;
-  } else {
-    cY = 50;
-  }
+ banner.addEventListener('mouseenter', () => {
+            banner.style.height = `24vh`;
+            close.style.transform = 'rotate(90deg)';
+             feature.style.display = 'block'; 
+            ma.style.display = 'block';    
+    bfa.style.display = 'block';
+    about.style.display = 'block';
  
-}
+  })
 
-past.style.transform = 'translateY(' + cY + 'px)';
+   banner.addEventListener('mouseleave', () => {
+            banner.style.height = `12vh`;
+            close.style.transform = 'rotate(0deg)';
+            feature.style.display = 'none';    
+            ma.style.display = 'none';      
+    bfa.style.display = 'none';
+    about.style.display = 'none';
 
- requestAnimationFrame(scroll);
-
-}
-
-scroll();
-
-scrollBox.addEventListener('mousemove', (event) => {
-  console.log("enter");
-  if(mY2 == 0){
-    mY2 = event.clientY;
-  }
-    if(event.clientY != mY2){
-      mY1 = mY2;
-      mY2 = event.clientY;
-      mY = mY2 - mY1;
-    }
-    hover = true;
-
-  });
-
-   scrollBox.addEventListener('mouseleave', () => {
-    hover = false;
-    speed = .5;
-
-  });
-
-
-button.addEventListener('mouseenter', () => {
-    rotateRing = 1;
-    rotate();
-  });
-  
-button.addEventListener('mouseleave', () => {
-    rotateRing = 0;
-  });
-
-ring.addEventListener('mouseenter', () => {
-    rotateRing = 1;
-    rotate();
-  });
-  
- ring.addEventListener('mouseleave', () => {
-    rotateRing = 0;
-  });
-
-  function rotate(){
-    if(rotateRing == 1){
-        ring.style.transform = 'rotate(' + deg + 'deg)';
-        deg += 3;
-        requestAnimationFrame(rotate);
-    }
-  }
-
-let lastTime = 0;
-
-  function animate(time) {
-	
-    if (time - lastTime >= 3500) {
-
-  let i = Math.floor(Math.random() * 7);
-  let temp1 = colors[i];
-colors[i] = colors[6-i];
-colors[6-i] = temp1;
-
-let temp2 = colorsa[i];
-colorsa[i] = colorsa[6-i];
-colorsa[6-i] = temp2;
-
-
-gradient.style.background = 'linear-gradient(45deg,'+ colors[0] + ',' + colorsa[0] + '70%),' +  
-'linear-gradient(90deg,' + colors[1] + ',' + colorsa[1] + '70%), ' +  
-'linear-gradient(135deg,' + colors[2] + ',' +  colorsa[2] + '70%),' +  
-'linear-gradient(180deg,' + colors[3] + ',' +  colorsa[3] + '70%),' +  
-'linear-gradient(225deg,' + colors[4] + ',' +  colorsa[4] + '70%),  ' +  
-'linear-gradient(270deg,' + colors[5] + ',' +  colorsa[5] + '70%),' +  
-'linear-gradient(315deg,' + colors[6] + ',' +  colorsa[6] + '70%)';
-
-lastTime = time;
-
-    }
-
-
-requestAnimationFrame(animate);
-
-}
-
-animate();
+  })
 
 
 
-  //resize
 
-  var base = document.getElementById('base');
+//resize
 
-  var past = document.getElementById('past');
-  var info = document.getElementById('info');
-  var xiya = document.getElementById('xiya');
-
-  var headshot = document.getElementById('headshot');
-
-
-  var popup = document.getElementById('popup');
-  var message = document.getElementById('message');
   const width = window.innerWidth;
   const height = window.innerHeight;
 
-  function resizePopup(){
-     if(width < height){
-      popup.style.visibility = 'visible';
+var galleryWidth = document.querySelectorAll('.project');
+var home = document.getElementById('home');
+var l1 = document.getElementById('l1');
+var icon = document.querySelectorAll('.icon');
+var content = document.getElementById('content');
+var ID = document.getElementById('id');
+var l3 = document.getElementById('l3');
+var l4 = document.getElementById('l4');
+
+
+function setProjectWidth() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    console.log("resize");
+    
+    if (width < height) {
+
+         icon.forEach(x => {
+            x.style.width = '2vw';
+        });
+
+        content.style.flexDirection = "column";
+        content.style.alignItems = "flex-start";
+        ID.style.width = '85vw';
+        l3.style.width = '85vw';
+        l4.style.marginLeft = '0vw';
+        l4.style.marginBottom = '20vh';
+        l1.style.width = '85vw';
+        home.style.removeProperty('width');
+        close.style.marginLeft = 'auto';
     } else {
-      popup.style.visibility = 'hidden';
+         icon.forEach(x => {
+            x.style.width = '1vw';
+        });
+        content.style.flexDirection = "row";
+        content.style.alignItems = "flex-end";
+        ID.style.width = '20vw';
+        l3.style.width = '40vw';
+        l4.style.marginLeft = '5vw'
+        l4.style.marginBottom = '0vh';
+        l1.style.width = '100vw';
+        home.style.width = '7.5vw';   
+        close.style.marginLeft = '85vw';
     }
-
-    if(window.innerWidth < 1000){
-requestMotionPermission();
-rotateIris = 1;
-rotate();
 }
-  }
 
+// 页面加载时执行一次
+setProjectWidth();
 
-  window.addEventListener('resize', () => {
-    console.log(headshot.offsetHeight);
-     const width = window.innerWidth;
-  const height = window.innerHeight;
-    gauge.style.width = '100vw';
-    base.style.width = '100vw';
-    base.style.height = '100vh';
-    var hit = headshot.offsetHeight;
-    // console.log(wth + "...." + wth/31*53);
-    // headshot.style.height = 53 (hit - 445) + '%';
-    // headshot.style.height = ((((hit - 445) - (100-445)) / ((100-445) - (100-445))) * (53 - 53*0.7) + 53*0.7) + '%';
+// 窗口变化时执行
+window.addEventListener('resize', setProjectWidth);
 
-  // if(width <= 500){
-  //   past.style.fontSize = "11px";
-  //   info.style.fontSize = "10px";
-  //   xiya.style.fontSize = "13px";
-   
-  // } else{
-  //   past.style.fontSize = "15px";
-  //   info.style.fontSize = "13px";
-  //   xiya.style.fontSize = "18px";
-  // }
-
-});
 
 
 
 </script>
+
 </body>
 </html> 
 
-
+ 

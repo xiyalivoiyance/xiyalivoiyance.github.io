@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 
 <html>
-<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<head>
+<meta charset="UTF-8">
+<title>XIYA LI PORTFOLIO</title>
+	<title>Xiya Li</title>
+	<meta name="author" content="Xiya Li">
+
+<meta name="Description" content="Xiya Li's portfolio website">
+</head>
 
     <style>
 
@@ -11,376 +20,243 @@
   box-sizing: border-box;
 }
 
+a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    body {
-  background-image: url('img/bg.png');
+body {
+  display: flex;
   background-repeat: no-repeat;
-  background-size: 120% auto;
+  background-size: 100% auto;
   background-position: center;
-  background-color: #C4C4C4;
-  overflow: hidden;
+  background-color: white;
+  flex-direction: column;
+  align-items: center; 
 }
 
-#base{
-  position: absolute;
-   width: 100vw;
-  height: 100vh;
+#banner{
+background-color: white;
+position: fixed; 
+width: 100vw;
+height:12vh;
+box-shadow: 0 4px 7px rgba(0, 0, 0, 0.02);
+display: flex;
+flex-direction: column;
+align-items: center;
+
 }
 
-    #cam{
-  width: 100vw;    
-  height: auto;      
-  display: block; 
-  position: absolute;
+#l1{
+width: 100vw;
+height:10vh;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
 }
 
-#button{
-       /* margin-top: 700px;
-       margin-left: 635px; */
-       top:82.3%;
-       left: 43.3%;
-       width: 14%;
-       position:absolute;
-    }
-
-    #iris{
-       top:82.75%;
-       left: 46.6%;
-       width: 7%;
-       position:absolute;
-       transition: transform 0.3s ease;
-    }
-
-    #p1{
-        width: 100%;
-    }
-
-    #p2{
-        width: 100%;
-       margin-top: 20%;
-    }
-
-    #p3{
-        width: 100%;
-        margin-top: 22%;
-    }
-
-    #p4{
-        width: 100%;
-        margin-top: 22%;
-    }
-
-    #p5{
-        width: 100%;
-        margin-top: 22%;
-    }
-
-
-
-    .scroll {
-  overflow: auto;
-  margin-top: 5%;
-  margin-left: 64%;
-  position: absolute;
-  width: 28%;
-  height: 80%;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+#home{
+font-family: 'Jost', sans-serif;
+font-weight: 560; 
+font-size: 1.1rem;
+/* width:7.5vw; */
+text-align: right;
+margin-top: 5vh;
 }
 
-.scroll::-webkit-scrollbar {
-  display: none; 
+#box1{
+width: 85vw;                     
+height: 0.5vh;
+margin-top: 5vh;
+/* display: block; */
 }
 
-#popup {
-  visibility: hidden; 
-  position:absolute;
-  background-color: #C4C4C4;
-  width: 100%;
-  height: 100%;
+#close{
+  height: 0.4vh;
+  margin-top: 6.4vh;
+  margin-left: 85vw;
 }
 
-.message {
-   font: medium "Jost";
-      color: white;
- margin-top: 30%;
-  margin-left: 30%;
-      position:absolute;
-      text-align: center;
-      font-size: 30px;
+h2{
+font-family: 'Jost', sans-serif;
+font-weight: 450; 
+font-size: 0.75rem;
+
 }
 
-#clicking {
-   font: medium "Jost";
-      color: white;
- margin-top: -20%;
-  margin-left: 30%;
-      position:absolute;
-      text-align: center;
-      font-size: 30px;
+#featured{
+width:85vw;
+margin-top: .2vh;
+text-align: right;
+display: none; 
+}
+
+#ma{
+width:85vw;
+margin-top:.2vh;
+text-align: right;
+display: none; 
+}
+
+#bfa{
+width:85vw;
+margin-top: .2vh;
+text-align: right;
+display: none; 
+}
+
+#about{
+width:85vw;
+margin-top:1vh;
+margin-top:1vh;
+text-align: right;
+display: none; 
 }
 
 
-#gyroscope {
-  visibility: hidden; 
-  position:absolute;
-  background-color: #AAAAAA;
-  width: 100%;
-  height: 100%;
+#gallery{
+background-color: white;
+margin-top: 20vh; 
+width: 85vw;
+margin-bottom: 20vh;
+display: flex;              
+    flex-wrap: wrap;         
+    gap: .5vh;
+
+
 }
 
-/* #motion {
-   font: medium "Jost";
-      color: rgb(0, 255, 106);
- margin-top: 20%;
-  margin-left: 30%;
-      position:absolute;
-      text-align: center;
-      font-size: 30px;
-} */
-
-#click {
- width:100px;
- height:100px;
- position: absolute;
+.project{
+  width:42.3vw;
 }
+
+
 
     </style>
     
 <body>
-    <img src="img/cam.png"  id="cam">
 
-    <div id="base">
 
-<a href="about.html"> <img src="img/button.png"  id="button"> </a>
-    <a href="about.html"> <img src="img/iris.png"  id="iris"> </a>
-
-    <div class="scroll">
-        <a href="project/touch_up.html"><img src="img/00.png"  id="p1" class="hover"></a>
-        <a href="project/flvw.html"><img src="img/10.png"  id="p2" class="hover"></a>
-        <a href="project/autoport.html"><img src="img/20.png"  id="p3" class="hover"></a>
-        <a href="project/blossom.html"><img src="img/30.png"  id="p4" class="hover"></a>
-        <a href="project/dressinglab.html"><img src="img/40.png"  id="p5" class="hover"></a>
-        
-    </div>
-
-    </div>
     
-   <div id="popup">
-  <div class="message">
-    <span style="font-size: 20px;"> PLEASE ROTATE -> </span> <strong> LANDSCAPE </strong> <span style="font-size: 20px;"> MODE </span> 
+<div id="banner">
+  <div id="l1">
+    <h1 href="index.html" id="home">XIYA LI</h1>
+
+ <img src="img/close.svg"  id="close">
   </div>
+
+    <a href="index.html" >
+   <h2 id="featured">Selected works</h2>
+</a>
+  
+    <a href="2025/index.html" >
+   <h2 id="ma">2023 - 2025</h2>
+</a>
+
+     <a href="2020/index.html" >
+  <h2 id="bfa">2016 - 2020</h2>
+</a>
+ 
+    <a href="about.html" >
+    <h2 id="about">ABOUT</h2>
+</a>
+
 </div>
 
-<button id="gyroscope"><div id="clicking">
-     <strong> CLICK </strong> <span style="font-size: 20px;"> -> OPEN GYROSCOPE </span> 
-  </div></button>
+<div id="gallery">
 
-<!-- <div id="motion">asdf</div> -->
+  <a href="project/p1.html"> <img src="img/p1.png" class="project"> </a>
+  <a href="project/p2.html"> <img src="img/p2.png" class="project"> </a>
+  <a href="project/p3.html"> <img src="img/p3.png" class="project"> </a>
+  <a href="project/p4.html"> <img src="img/p4.png" class="project"> </a>
+  <a href="project/p5.html"> <img src="img/p5.png" class="project"> </a>
+  <a href="project/p6.html"> <img src="img/p6.png" class="project"> </a>
+
+</div>
+
+
+
 
 
 <script>
 
-    var x = 0;
-    var y = 0;
-    // var bgX = document.getElementById('background').style.marginLeft;
-    // var bgY = document.getElementById('background').style.marginTop;
-    var bgX = 0;
-    var bgY = 0;
-    var button = document.getElementById('button');
 
-    var iris = document.getElementById('iris');
-    var rotateIris = 0;
-    var deg = 0;
+    var banner = document.getElementById('banner');
+    var close = document.getElementById('close');
+    var feature = document.getElementById('featured');
+    var ma = document.getElementById('ma');
+    var bfa = document.getElementById('bfa');
+    var about = document.getElementById('about');
 
-    document.body.style.backgroundPosition = `${0}% ${10}%`;
-    // console.log(document.body.style.backgroundPosition);
+ banner.addEventListener('mouseenter', () => {
+            banner.style.height = `24vh`;
+            close.style.transform = 'rotate(90deg)';
+                    feature.style.display = 'block';   
+            ma.style.display = 'block';    
+    bfa.style.display = 'block';
+    about.style.display = 'block';
+ 
+  })
 
-    function moveBG(event) {
+   banner.addEventListener('mouseleave', () => {
+            banner.style.height = `12vh`;
+            close.style.transform = 'rotate(0deg)';
+            feature.style.display = 'none';    
+            ma.style.display = 'none';      
+    bfa.style.display = 'none';
+    about.style.display = 'none';
 
-  x = event.clientX / window.innerWidth;
-  y = event.clientY / window.innerHeight;
+  })
 
-//   console.log("x: " + x + "y: " + y);
+//resize
 
-  if(!((x >= .6) && (x <= .9))){
-
-
-  bgX = x*20;
-  bgY = y*10+10;
-   
-    // console.log("bgX: " + bgX + "bgY: " + bgY);
-  document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
-   
-
-  }
-
-
-
-}
-
-document.addEventListener("mousemove", moveBG);
-
-const imgs = document.querySelectorAll('.hover');
-
-function hoverImage(){
-    for (let i = 0; i < imgs.length; i++) {
-        imgs[i].addEventListener('mouseenter', () => {
-            imgs[i].src = 'img/' + i + '1.png';
-  });
-
-  imgs[i].addEventListener('mouseleave', () => {
-            imgs[i].src = 'img/' + i + '0.png';
-  });
-
-}
-}
-
-
-hoverImage();
-
-
-button.addEventListener('mouseenter', () => {
-    rotateIris = 1;
-    rotate();
-  });
-  
-button.addEventListener('mouseleave', () => {
-    rotateIris = 0;
-  });
-
-iris.addEventListener('mouseenter', () => {
-    rotateIris = 1;
-    rotate();
-  });
-  
-  iris.addEventListener('mouseleave', () => {
-    rotateIris = 0;
-  });
-
-  function rotate(){
-    if(rotateIris == 1){
-        iris.style.transform = 'rotate(' + deg + 'deg)';
-        deg += 3;
-        requestAnimationFrame(rotate);
-    }
-  }
-  
-
-
-  //resize
-
-  var cam = document.getElementById('cam');
-  var base = document.getElementById('base');
-
-  var popup = document.getElementById('popup');
-  var gyroscope = document.getElementById('gyroscope');
   const width = window.innerWidth;
   const height = window.innerHeight;
 
-  //  var motion = document.getElementById('motion');
-      // var click = document.getElementById('click');
+var galleryWidth = document.querySelectorAll('.project');
+var home = document.getElementById('home');
+var l1 = document.getElementById('l1');
+var gallery = document.getElementById('gallery');
+// var box1 = document.getElementById('box1');
 
-  function resizePopup(){
-     if(width < height){
-      popup.style.visibility = 'visible';
-      
-    } else {
-      popup.style.visibility = 'hidden';
-    }
-    if(window.innerWidth < 1000){
-      gyroscope.style.visibility = 'visible';
-    }
-     
-  }
 
-  resizePopup();
-
-  window.addEventListener('resize', () => {
+function setProjectWidth() {
     const width = window.innerWidth;
-  const height = window.innerHeight;
-    cam.style.width = '100vw';
-    base.style.width = '100vw';
-    base.style.height = '100vh';
-    if(width < height){
-      popup.style.visibility = 'visible';
+    const height = window.innerHeight;
+    console.log("resize");
+    
+    if (width < height) {
+        galleryWidth.forEach(project => {
+            project.style.width = '85vw';
+               
+        });
+        // box1.style.width = '60vw';
+        l1.style.width = '85vw';
+        home.style.removeProperty('width');
+        close.style.marginLeft = 'auto';
+        gallery.style.gap = '5vh';
     } else {
-      popup.style.visibility = 'hidden';
+        galleryWidth.forEach(project => {
+            project.style.width = '42.3vw';
+             
+        });
+        // box1.style.width = '85vw';
+        l1.style.width = '100vw';
+        home.style.width = '7.5vw';   
+        close.style.marginLeft = '85vw';
+      gallery.style.gap = '.5vh';
     }
-
-});
-
-gyroscope.addEventListener('click', () => {
-      gyroscope.style.visibility = 'hidden';
- if(window.innerWidth < 1000){
-      
-requestMotionPermission();
-rotateIris = 1;
-rotate();
 }
 
 
-});
+setProjectWidth();
 
-
-// Your motion handler function
-function handleMotion(event) {
-  let x = event.accelerationIncludingGravity.x;
-  let y = event.accelerationIncludingGravity.y;
- 
-x = Math.floor(x);
-y = Math.floor(y);
-// if(x<0){
-//   x *= -1;
-
-// }
-// if(y<0){
-//   y *= -1;
-
-// }
-// if(z<0){
-//   z *= -1;
-// }
-
-bgX = y*3+25;
-bgY = x*3+25;
-document.body.style.backgroundPosition = `${bgX}% ${bgY}%`;
-
-
-  // motion.textContent = "x:" + x + "y:" + y;
-
-}
-
-
-function requestMotionPermission() {
-  // motion.textContent ="permission requested";
-  if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
-    DeviceMotionEvent.requestPermission()
-      .then(permissionState => {
-        if (permissionState === 'granted') {
-          // ✅ Now safe to add your event listener
-          window.addEventListener('devicemotion', handleMotion);
-        } else {
-          console.warn("Permission not granted for devicemotion");
-        }
-      })
-      .catch(console.error);
-  } else {
-    // For Android or non-iOS devices (no permission prompt)
-    window.addEventListener('devicemotion', handleMotion);
-  }
-}
-
-
-
-
-
-
-
+window.addEventListener('resize', setProjectWidth);
 
 
 </script>
+
 </body>
 </html> 
 
-
+ 
