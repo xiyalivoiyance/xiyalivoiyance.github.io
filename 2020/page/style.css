@@ -824,7 +824,6 @@ width: 40vw;
 	grid-column: 2 / span 2;
 	columns: 2;
 	column-gap: 10%;
-	font-size: 14px;
 	/* line-height: 34px; */
 	font-family: Arial, Helvetica, sans-serif;
 
@@ -1025,3 +1024,11 @@ margin-right: 81vw;
   /* margin-right: 7.5vw; */
 }
 
+
+#CAC{
+
+    width: 75vw;
+    margin-left: 13vw;
+	margin-top: 15vh;
+
+}

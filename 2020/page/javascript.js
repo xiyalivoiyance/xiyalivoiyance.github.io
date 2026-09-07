@@ -11,6 +11,7 @@
 
      var title = document.querySelectorAll('.Title')[0];
      var article = document.querySelectorAll('article');
+     var CAC = document.getElementById('CAC');
 
 	var category = document.getElementById('category');
 
@@ -112,6 +113,10 @@ article.forEach(function(element) {
      element.style.marginTop = '7.5vh';
 });
 
+if(CAC != null){
+CAC.style.marginTop = '7.5vh';
+
+}
 
     } else {
 		
@@ -184,6 +189,12 @@ title.style.marginTop = '15vh';
 article.forEach(function(element) {
      element.style.marginTop = '15vh';
 });
+
+if(CAC != null){
+CAC.style.marginTop = '15vh';
+
+}
+
 
     }
 }
