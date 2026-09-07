@@ -103,7 +103,7 @@ p3{
 
 
 article{
-	margin-top: 23vh;
+	margin-top: 15vh;
 	margin-left: 13%;
 	width: 76%;
 	font-family: Helvetica, Arial;
@@ -145,8 +145,6 @@ width: 100%;
     flex-direction: column;
 	gap: 1vh;
 }
-
-
 
 
 

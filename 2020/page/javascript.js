@@ -9,7 +9,8 @@
   var nav1 = document.querySelectorAll('.Nav1');
     var nav2 = document.querySelectorAll('.Nav2');
 
-     var title = document.querySelectorAll('.Title');
+     var title = document.querySelectorAll('.Title')[0];
+     var article = document.querySelectorAll('article');
 
 	var category = document.getElementById('category');
 
@@ -75,6 +76,10 @@ FFdesignConceptDscrp1.style.columns = '1';
 }
 
 category.style.marginTop = '10vh';
+title.style.marginTop = '7.5vh';
+article.forEach(function(element) {
+     element.style.marginTop = '7.5vh';
+});
 
 
     } else {
@@ -121,6 +126,10 @@ FFdesignConceptDscrp1.style.columns = '2';
 
 
 category.style.marginTop = '15vh';
+title.style.marginTop = '15vh';
+article.forEach(function(element) {
+     element.style.marginTop = '15vh';
+});
 
     }
 }
