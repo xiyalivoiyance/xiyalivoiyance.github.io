@@ -110,26 +110,19 @@ article{
 	line-height: 2.0;
 }
 
+#category {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-left: 1vw;
+    margin-top: 5vh;
+    position: fixed;
+}
+
 .Nav {
-	position: fixed;
-	margin-left: 6vw;
-	margin-top: 8vh;
+	align-items: left;
 }
-.Nav1 {
-	position: fixed;
-	margin-left: 6vw;
-	margin-top: 13vh;
-}
-.Nav2 {
-	position: fixed;
-	margin-left: 6vw;
-	margin-top: 18vh;
-}
-.Nav3 {
-	position: fixed;
-	left: 60px;	
-	top: 180px;
-}
+
 
 
 
@@ -648,7 +641,7 @@ width: 40vw;
 	padding-top: 20vh;
 }
 
-.FFpbp{
+#FFpbp{
 	position: relative;
 	columns: 3;
 	column-gap: 5%;

@@ -22,7 +22,7 @@ var p1Elements = document.querySelectorAll('p1');
 var p2Elements = document.querySelectorAll('p2');
 
 
-var FFpbp = document.querySelectorAll('.FFpbp');
+var FFpbp = document.getElementById('FFpbp');
 
 var FFdesignConceptDscrp1 = document.getElementById('FFdesignConceptDscrp1');
 
@@ -52,7 +52,6 @@ nav2.forEach(nav2 => {
             nav2.style.marginLeft = '6vw';
         });
 
-		 category.style.marginTop = '5vh';
 
 
 title.style.position = 'static';
@@ -98,7 +97,7 @@ flexDir.forEach(function(element) {
     element.style.flexDirection = 'row';
 });
 
-if(FFpbp.length != 0){
+if(FFpbp != null){
 FFpbp.style.columns = '1';
 FFdesignConceptDscrp1.style.columns = '1';
 
@@ -122,7 +121,6 @@ nav2.forEach(nav2 => {
             nav2.style.marginLeft = '6vw';
         });
 
-		category.style.marginTop = '0vh';
 
 
 title.style.position = 'relative';
@@ -168,7 +166,7 @@ flexDir.forEach(function(element) {
 });
 
 
-if(FFpbp.length != 0){
+if(FFpbp != null){
 FFpbp.style.columns = '3';
 FFdesignConceptDscrp1.style.columns = '2';
 
