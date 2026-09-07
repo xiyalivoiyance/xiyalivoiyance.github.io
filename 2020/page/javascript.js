@@ -78,7 +78,7 @@ p2Elements.forEach(function(element) {
 });
 
 
-if(flexDir != null){
+if(flexDir.length != 0){
 flexDir.forEach(function(element) {
      element.style.display = 'flex';
     element.style.flexDirection = 'column';
@@ -152,7 +152,7 @@ p2Elements.forEach(function(element) {
 });
 
 
-if(flexDir != null){
+if(flexDir.length != 0){
 flexDir.forEach(function(element) {
     element.style.display = 'flex';
     element.style.flexDirection = 'row';
