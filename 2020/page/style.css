@@ -65,6 +65,16 @@ h5{
 	max-width: 500px;
 }
 
+h6{
+	
+	color: black;
+	font-family: Helvetica, Arial;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0px;
+}
+
 p{
 	font-family: Helvetica, Arial;
 	font-size: 20px;
@@ -809,14 +819,15 @@ width: 40vw;
 
 #FFdesignConceptDscrp1{
 	
-	margin-top: 10%;
+	width:50vw;
+	padding-top: 5vh;
 	grid-column: 2 / span 2;
 	columns: 2;
 	column-gap: 10%;
 	font-size: 14px;
 	/* line-height: 34px; */
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
+
 }
 
 

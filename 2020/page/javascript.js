@@ -17,6 +17,7 @@
   var h1Elements = document.querySelectorAll('h1');
     var h3Elements = document.querySelectorAll('h3');
 var h4Elements = document.querySelectorAll('h4');
+var h6Elements = document.querySelectorAll('h6');
 var p1Elements = document.querySelectorAll('p1');
 var p2Elements = document.querySelectorAll('p2');
 
@@ -61,6 +62,11 @@ h3Elements.forEach(function(element) {
 h4Elements.forEach(function(element) {
     element.style.fontSize = '1rem';
 });
+
+h6Elements.forEach(function(element) {
+    element.style.fontSize = '1rem';
+});
+
 
 p1Elements.forEach(function(element) {
     element.style.fontSize = '13px';
@@ -126,6 +132,10 @@ h3Elements.forEach(function(element) {
 
 h4Elements.forEach(function(element) {
     element.style.fontSize = '0.75rem';
+});
+
+h6Elements.forEach(function(element) {
+    element.style.fontSize = '0.9rem';
 });
 
 p1Elements.forEach(function(element) {
