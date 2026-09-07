@@ -137,15 +137,6 @@ ring.addEventListener('mouseenter', () => {
     }
   }
 
-  var pagePos = 0;
-  window.addEventListener('scroll', () => {
-    pagePos = window.scrollY
-    if(pagePos >= 1000){
-      ring.style.visibility = 'hidden';
-    } else{
-      ring.style.visibility = 'visible';
-    }
-});
 
 
 //banner
@@ -165,6 +156,25 @@ ring.addEventListener('mouseenter', () => {
             close.style.transform = 'rotate(0deg)';
 
   })
+
+
+
+    var pagePos = 0;
+  window.addEventListener('scroll', () => {
+    pagePos = window.scrollY
+    if(pagePos >= 750){
+      ring.style.visibility = 'hidden';
+    } else{
+      ring.style.visibility = 'visible';
+    }
+
+     if(pagePos >= 500){
+      banner.style.visibility = 'hidden';
+    } else{
+      banner.style.visibility = 'visible';
+    }
+
+});
 
 
 

@@ -189,16 +189,7 @@ window.addEventListener('resize', setProjectWidth);
 
 
 
-  var pagePos = 0;
-  window.addEventListener('scroll', () => {
-    pagePos = window.scrollY
-    if(pagePos >= 100){
-      category.style.visibility = 'hidden';
-    } else{
-      category.style.visibility = 'visible';
-    }
-});
-
+ 
 
 
 
@@ -225,3 +216,14 @@ window.addEventListener('resize', setProjectWidth);
   })
 
 
+ var pagePos = 0;
+  window.addEventListener('scroll', () => {
+    pagePos = window.scrollY
+    if(pagePos >= 100){
+      category.style.visibility = 'hidden';
+      banner.style.visibility = 'hidden';
+    } else{
+      category.style.visibility = 'visible';
+      banner.style.visibility = 'visible';
+    }
+});
