@@ -90,6 +90,8 @@ FFdesignConceptDscrp1.style.columns = '1';
 
 }
 
+category.style.marginTop = '10vh';
+
 
     } else {
 		
@@ -148,6 +150,8 @@ FFdesignConceptDscrp1.style.columns = '2';
 
 }
 
+
+category.style.marginTop = '15vh';
 
     }
 }

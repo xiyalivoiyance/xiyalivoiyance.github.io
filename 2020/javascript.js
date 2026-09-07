@@ -37,7 +37,7 @@ function setProjectWidth() {
       x.style.width = '60vw';
         });
 
-        // category.style.marginTop = '15vh';
+        category.style.marginTop = '10vh';
 
 
     } else {
