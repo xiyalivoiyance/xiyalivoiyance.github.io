@@ -27,6 +27,14 @@ var FFdesignConceptDscrp1 = document.getElementById('FFdesignConceptDscrp1');
 
 
 var flexDir = document.querySelectorAll('.flexDir');
+var R1 = document.getElementById('R1');
+var R2 = document.getElementById('R2');
+var STdscp1 = document.getElementById('STdscp1');
+var STdscp2 = document.getElementById('STdscp2');
+var STdscp3 = document.getElementById('STdscp3');
+var STdscp4 = document.getElementById('STdscp4');
+
+
 
 function setProjectWidth() {
     const width = window.innerWidth;
@@ -63,11 +71,28 @@ p2Elements.forEach(function(element) {
 });
 
 
-
+if(flexDir != null){
 flexDir.forEach(function(element) {
      element.style.display = 'flex';
-    element.style.flexDirection = 'row';
+    element.style.flexDirection = 'column';
 });
+
+    R1.style.width = '80vw';
+    R2.style.width = '80vw';
+    STdscp1.style.width = '80vw';
+    STdscp2.style.width = '80vw';
+
+     if(STdscp3 != null){
+         STdscp3.style.width = '80vw';
+    }
+
+     if(STdscp4 != null){
+         STdscp4.style.width = '80vw';
+    }
+
+}
+
+
 
 if(FFpbp != null){
 FFpbp.style.columns = '1';
@@ -111,10 +136,29 @@ p2Elements.forEach(function(element) {
     element.style.fontSize = '13px';
 });
 
+
+if(flexDir != null){
 flexDir.forEach(function(element) {
     element.style.display = 'flex';
     element.style.flexDirection = 'row';
 });
+
+    R1.style.width = '40vw';
+    R2.style.width = '40vw';
+    STdscp1.style.width = '23vw';
+    STdscp2.style.width = '23vw';
+
+    if(STdscp3 != null){
+         STdscp3.style.width = '23vw';
+    }
+
+    if(STdscp4 != null){
+         STdscp4.style.width = '23vw';
+    }
+
+
+}
+
 
 
 if(FFpbp != null){
