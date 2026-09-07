@@ -9,9 +9,7 @@
   var nav1 = document.querySelectorAll('.Nav1');
     var nav2 = document.querySelectorAll('.Nav2');
 
-     var title = document.querySelectorAll('.Title')[0];
-  var subtitle = document.querySelectorAll('.Subtitle')[0];
-    var date = document.querySelectorAll('.Date')[0];
+     var title = document.querySelectorAll('.Title');
 
 	var category = document.getElementById('category');
 
@@ -41,24 +39,10 @@ function setProjectWidth() {
 
 
 
-title.style.position = 'static';
-title.style.fontSize = '20px';
-title.style.marginLeft = '13vw';
-title.style.marginTop = '5vh';
-
-subtitle.style.position = 'static';
-subtitle.style.fontSize = '15px';
-subtitle.style.marginLeft = '13vw';
-subtitle.style.marginTop = '3vh';
-
-date.style.position = 'static';
-date.style.fontSize = '15px';
-date.style.marginLeft = '13vw';
-date.style.marginTop = '3vh';
 
 
 h1Elements.forEach(function(element) {
-    element.style.fontSize = '18px';
+    element.style.fontSize = '2rem';
 });
 
 h3Elements.forEach(function(element) {
@@ -66,7 +50,7 @@ h3Elements.forEach(function(element) {
 });
 
 h4Elements.forEach(function(element) {
-    element.style.fontSize = '12px';
+    element.style.fontSize = '1rem';
 });
 
 p1Elements.forEach(function(element) {
@@ -100,25 +84,10 @@ category.style.marginTop = '10vh';
         });
 
 
-title.style.position = 'relative';
-title.style.fontSize = '20px';
-title.style.marginLeft = '13vw';
-title.style.marginTop = '-23vh';
-
-subtitle.style.position = 'relative';
-subtitle.style.fontSize = '15px';
-subtitle.style.marginLeft = '13vw';
-subtitle.style.marginTop = '2vh';
-
-date.style.position = 'relative';
-date.style.fontSize = '15px';
-date.style.marginLeft = '13vw';
-date.style.marginTop = '1vh';
-
 
 
 h1Elements.forEach(function(element) {
-    element.style.fontSize = '20px';
+    element.style.fontSize = '1.5rem';
 });
 
 h3Elements.forEach(function(element) {
@@ -126,7 +95,7 @@ h3Elements.forEach(function(element) {
 });
 
 h4Elements.forEach(function(element) {
-    element.style.fontSize = '13px';
+    element.style.fontSize = '0.75rem';
 });
 
 p1Elements.forEach(function(element) {

@@ -27,7 +27,7 @@ h1 {
 	font-family:Helvetica, Arial;
 	text-decoration: none;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 1.5rem;
 }
 
 h2 {
@@ -139,30 +139,11 @@ width: 100%;
 }
 
 .Title{
-	/* position: absolute; */
-	font-size: 20px;
 	margin-left: 13vw;
-	margin-top: 20vh;
-}
-
-.Subtitle{
-	/* position: absolute; */
-	margin-left: 13vw;
-	margin-top: 25vh;
-}
-
-.Date{
-	/* position: absolute; */
-	margin-left: 13vw;
-	margin-top: 26vh;
-}
-
-.PS{
-	max-width: 76%;
-	font-family: Helvetica, Arial;
-	line-height: 1.5;
-	/* margin-top: 100%; */
-	
+	margin-top: 15vh;
+	display: flex;
+    flex-direction: column;
+	gap: 1vh;
 }
 
 
