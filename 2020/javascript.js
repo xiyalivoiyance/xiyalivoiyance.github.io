@@ -34,7 +34,7 @@ function setProjectWidth() {
 
 
      d.forEach(x => {
-      x.style.width = '60vw';
+      x.style.width = '75vw';
         });
 
         category.style.marginTop = '10vh';
