@@ -32,6 +32,7 @@ var FFdesignConceptDscrp1 = document.getElementById('FFdesignConceptDscrp1');
 var flexDir = document.querySelectorAll('.flexDir');
 var R1 = document.getElementById('R1');
 var R2 = document.getElementById('R2');
+var R4 = document.getElementById('R4');
 var STdscp1 = document.getElementById('STdscp1');
 var STdscp2 = document.getElementById('STdscp2');
 var STdscp3 = document.getElementById('STdscp3');
@@ -91,6 +92,7 @@ flexDir.forEach(function(element) {
 
     R1.style.width = '80vw';
     R2.style.width = '80vw';
+  
     STdscp1.style.width = '80vw';
     STdscp2.style.width = '80vw';
 
@@ -100,6 +102,10 @@ flexDir.forEach(function(element) {
 
      if(STdscp4 != null){
          STdscp4.style.width = '80vw';
+    }
+
+     if(R4 != null){
+           R4.style.width = '80vw';
     }
 
 }
@@ -178,6 +184,10 @@ flexDir.forEach(function(element) {
 
     if(STdscp4 != null){
          STdscp4.style.width = '23vw';
+    }
+
+     if(R4 != null){
+           R4.style.width = '40vw';
     }
 
 
