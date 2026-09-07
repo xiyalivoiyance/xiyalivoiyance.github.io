@@ -60,7 +60,7 @@ h4{
 	color: #115FB1;
 	font-family: Helvetica, Arial;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 0.75rem;
 	max-width: 500px;
 	margin: 0px;
 }
@@ -175,14 +175,15 @@ p{
 #category {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    margin-left: 1vw;
-    margin-top: 5vh;
+    gap: 2vh;
+    margin-left: 7vw;
+    margin-top: 15vh;
     position: fixed;
 }
 
 .Nav {
 	align-items: left;
+	font-size: 0.75rem;
 }
 
 

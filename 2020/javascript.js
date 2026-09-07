@@ -6,8 +6,7 @@
   const height = window.innerHeight;
 
     var nav = document.querySelectorAll('.Nav');
-  var nav1 = document.querySelectorAll('.Nav1');
-    var nav2 = document.querySelectorAll('.Nav2');
+    var h4 = document.querySelectorAll('h4');
 
 	var category = document.getElementById('category');
 
@@ -26,19 +25,10 @@ function setProjectWidth() {
     if (width < height) {
        pc.style.flexDirection = 'column';
 	      nav.forEach(nav => {
-        //    nav1.style.position = 'static';
-		    nav.style.marginTop = '4vh';      // 恢复横屏值
-            nav.style.marginLeft = '6vw';
+            nav.style.fontSize = '2rem';
         });
-	   nav1.forEach(nav1 => {
-        //    nav1.style.position = 'static';
-		    nav1.style.marginTop = '8vh';      // 恢复横屏值
-            nav1.style.marginLeft = '6vw';
-        });
-nav2.forEach(nav2 => {
-            // nav2.style.position = 'static';
-			 nav2.style.marginTop = '12vh';      // 恢复横屏值
-            nav2.style.marginLeft = '6vw';
+         h4.forEach(x => {
+            x.style.fontSize = '2rem';
         });
 
 
@@ -47,30 +37,29 @@ nav2.forEach(nav2 => {
       x.style.width = '60vw';
         });
 
+        // category.style.marginTop = '15vh';
 
 
     } else {
          pc.style.flexDirection = 'row';
 		 nav.forEach(nav => {
-            nav.style.position = 'fixed';
-			 nav.style.marginTop = '8vh';      // 恢复横屏值
-            nav.style.marginLeft = '6vw';
+        nav.style.fontSize = '0.75rem';
         });
-		 nav1.forEach(nav1 => {
-            nav1.style.position = 'fixed';
-			 nav1.style.marginTop = '11vh';      // 恢复横屏值
-            nav1.style.marginLeft = '6vw';
+        h4.forEach(x => {
+            x.style.fontSize = '0.75rem';
         });
-nav2.forEach(nav2 => {
-            nav2.style.position = 'fixed';
-			 nav2.style.marginTop = '14vh';      // 恢复横屏值
-            nav2.style.marginLeft = '6vw';
-        });
+
+
 
 
 d.forEach(x => {
       x.style.width = '30vw';
         });
+
+
+        // category.style.marginTop = '5vh';
+
+
 
 
     }

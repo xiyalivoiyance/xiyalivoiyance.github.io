@@ -34,22 +34,9 @@ function setProjectWidth() {
     const height = window.innerHeight;
     
     if (width < height) {
-	      nav.forEach(nav => {
-        //    nav1.style.position = 'static';
-		    nav.style.marginTop = '4vh';      // 恢复横屏值
-            nav.style.marginLeft = '6vw';
-        });
-
-	   nav1.forEach(nav1 => {
-        //    nav1.style.position = 'static';
-		    nav1.style.marginTop = '8vh';      // 恢复横屏值
-            nav1.style.marginLeft = '6vw';
-        });
-
-nav2.forEach(nav2 => {
-            // nav2.style.position = 'static';
-			 nav2.style.marginTop = '12vh';      // 恢复横屏值
-            nav2.style.marginLeft = '6vw';
+	      
+         nav.forEach(nav => {
+            nav.style.fontSize = '2rem';
         });
 
 
@@ -105,22 +92,10 @@ FFdesignConceptDscrp1.style.columns = '1';
 
 
     } else {
-		 nav.forEach(nav => {
-            nav.style.position = 'fixed';
-			 nav.style.marginTop = '8vh';      // 恢复横屏值
-            nav.style.marginLeft = '6vw';
+		
+         nav.forEach(nav => {
+        nav.style.fontSize = '0.75rem';
         });
-		 nav1.forEach(nav1 => {
-            nav1.style.position = 'fixed';
-			 nav1.style.marginTop = '11vh';      // 恢复横屏值
-            nav1.style.marginLeft = '6vw';
-        });
-nav2.forEach(nav2 => {
-            nav2.style.position = 'fixed';
-			 nav2.style.marginTop = '14vh';      // 恢复横屏值
-            nav2.style.marginLeft = '6vw';
-        });
-
 
 
 title.style.position = 'relative';
