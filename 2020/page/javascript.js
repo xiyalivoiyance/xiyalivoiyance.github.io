@@ -79,7 +79,7 @@ p2Elements.forEach(function(element) {
 });
 
 p4Elements.forEach(function(element) {
-    element.style.fontSize = '13px';
+    element.style.fontSize = '20px';
 });
 
 
